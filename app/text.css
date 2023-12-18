@@ -1,0 +1,23 @@
+a {
+  background: linear-gradient(0deg, slateblue, slateblue) no-repeat right bottom /
+    0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+}
+a:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}
+
+.underline {
+  padding-bottom: 2px;
+  --bg-h: 2px;
+}
+
+body {
+  font-size: 2em;
+  text-align: center;
+}
+
+a {
+}
