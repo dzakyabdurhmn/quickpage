@@ -13,6 +13,9 @@
     height: 500px;
     width: 1000px;
     border-radius: 25px;
+    @media only screen and (max-width: 600px) {
+      border-radius: 0px;
+    }
     padding: 50px;
     transform-origin: top;
     h2 {
@@ -50,6 +53,10 @@
       }
 
       .imageContainer {
+        display: none;
+        @media (min-width: 640px) {
+          display: block;
+        }
         position: relative;
         width: 60%;
         height: 100%;

@@ -34,11 +34,11 @@ const Card = ({
         }}
         className={styles.card}
       >
-        <h2>{title}</h2>
+        {/* <h2>{title}</h2> */}
         <div className={styles.body}>
-          <div className={styles.description}>
-            <p>{description}</p>
-            <span>
+          {/* <div className={styles.description}> */}
+          <p>{description}</p>
+          {/* <span>
               <a href={url} target="_blank">
                 See more
               </a>
@@ -54,14 +54,13 @@ const Card = ({
                   fill="black"
                 />
               </svg>
-            </span>
-          </div>
-
-          <div className={styles.imageContainer}>
+            </span> */}
+          {/* </div> */}
+          {/* <div className={styles.imageContainer}>
             <motion.div className={styles.inner} style={{ scale: imageScale }}>
               <Image fill src={`${src}`} alt="image" />
             </motion.div>
-          </div>
+          </div> */}
         </div>
       </motion.div>
     </div>
