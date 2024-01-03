@@ -4,15 +4,17 @@ import Hero from "./hero";
 import Card from "./card";
 import All from "./menu";
 import Accordion from "./accordion";
+import Footer from "./footer";
 
 const page = () => {
   return (
     <>
-      {/* <Navbar />
+      <Navbar />
       <Hero />
-      <Card /> */}
+      <Card />
       <All />
-      {/* <Accordion /> */}
+      <Accordion />
+      {/* <Footer /> */}
     </>
   );
 };
