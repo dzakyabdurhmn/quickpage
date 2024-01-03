@@ -9,10 +9,10 @@ import Footer from "./footer";
 const page = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <Hero />
       <Card />
-      <All />
+      <All /> */}
       <Accordion />
       {/* <Footer /> */}
     </>

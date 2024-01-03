@@ -23,3 +23,15 @@
     min-width: 250px;
   }
 }
+
+@media (min-width: 768px) {
+  panahX {
+    display: none;
+  }
+}
+
+@media (max-width: 343px) {
+  .maxmd {
+    max-width: 100px;
+  }
+}

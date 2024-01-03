@@ -54,6 +54,7 @@
 import React from "react";
 import localFont from "next/font/local";
 import Link from "next/link";
+import Text from "@/components/textanimation";
 const FBlack = localFont({ src: "../public/fonts/Friends-BlackItalic.otf" });
 const FNormal = localFont({ src: "../public/fonts/Friends-Normal.otf" });
 const FsemiBold = localFont({ src: "../public/fonts/Friends-SemiBold.otf" });
@@ -67,7 +68,8 @@ function hero({ Component, pageProps }: any) {
             <h1
               className={`"block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight -mt-10" ${FBlack.className}`}
             >
-              MEETING ALL STUDENT <br /> NEEDS IN ONE GRASP.
+              MEETING ALL STUDENT NEEDS IN ONE GRASP.
+              {/* <Text /> */}
             </h1>
             <p
               className={`mt-3 text-lg text-gray-800 dark:text-gray-400 ${FNormal.className}`}
