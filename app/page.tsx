@@ -5,16 +5,17 @@ import Card from "./card";
 import All from "./menu";
 import Accordion from "./accordion";
 import Footer from "./footer";
+import Coment from "./counterNumber";
 
 const page = () => {
   return (
     <>
-      {/* <Navbar />
+      <Navbar />
       <Hero />
       <Card />
-      <All /> */}
+      <All />
       <Accordion />
-      {/* <Footer /> */}
+      <Coment />
     </>
   );
 };
