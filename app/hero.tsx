@@ -1,60 +1,10 @@
-// import React from "react";
-// import "./style.css";
-// import Text from "@/components/text";
-// function abisHero() {
-//   return (
-//     <main className="justify-center items-center flex flex-col space-y-12 -mt-[250px]">
-//       <div>
-//         <div className="text-center uppercase text-lg">
-//           <h1 className="text-lg text-blue-700">for humanity</h1>
-//           <h1 className="mt-7 text-3xl  font-semibold leading-normal text-[#0E0B3D] flex flex-col items-center">
-//             <span>
-//               MEETING ALL STUDENT <br /> NEEDS IN ONE GRASP.
-//             </span>
-//           </h1>
-
-//           <p className="mt-6 text-[#0E0B3D]">
-//             One-stop platform for all student learning resources, empowering
-//             them to thrive in school.
-//           </p>
-//         </div>
-//       </div>
-//       <div className="stage">
-//         <img
-//           className="box bounce-1"
-//           src="https://res.cloudinary.com/dfnxmrqmt/image/upload/v1702753952/iyffpzktqq2dencmjg4w.svg"
-//           alt="wswsw"
-//         />
-//       </div>
-//     </main>
-//   );
-// }
-
-// export default abisHero;
-
-// // https://www.youtube.com/watch?v=am0ZueQmpzg
-
-// /* <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600">
-//               Hello, world!
-//             </span> */
-
-// src/components/ReloadButton.tsx
-// "use client";
-// import React from "react";
-
-// const ReloadButton: React.FC = () => {
-//   const handleReload = () => {
-//     window.location.reload();
-//   };
-
-//   return <button onClick={handleReload}>Reload Page</button>;
-// };
-
-// export default ReloadButton;
 import React from "react";
 import localFont from "next/font/local";
 import Link from "next/link";
 import Text from "@/components/textanimation";
+import Image from "next/image";
+import { name, description, heroImage } from "../lib/info";
+
 const FBlack = localFont({ src: "../public/fonts/Friends-BlackItalic.otf" });
 const FNormal = localFont({ src: "../public/fonts/Friends-Normal.otf" });
 const FsemiBold = localFont({ src: "../public/fonts/Friends-SemiBold.otf" });
@@ -68,14 +18,12 @@ function hero({ Component, pageProps }: any) {
             <h1
               className={`"block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight -mt-10" ${FBlack.className}`}
             >
-              MEETING ALL STUDENT NEEDS IN ONE GRASP.
-              {/* <Text /> */}
+              {name}
             </h1>
             <p
               className={`mt-3 text-lg text-gray-800 dark:text-gray-400 ${FNormal.className}`}
             >
-              One-stop platform for all student learning resources, empowering
-              them to thrive in school.
+              {description}
             </p>
             <div className="mt-7 grid gap-3 w-full sm:inline-flex">
               <Link
@@ -87,16 +35,7 @@ function hero({ Component, pageProps }: any) {
             </div>
           </div>
           <div className="relative ms-4">
-            {/* <img
-              className="w-full rounded-md"
-              src="https://images.unsplash.com/photo-1665686377065-08ba896d16fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&h=800&q=80"
-              alt="Image Description"
-            /> */}
-            <img
-              className="w-full rounded-md"
-              src="https://res.cloudinary.com/dfnxmrqmt/image/upload/v1702753952/iyffpzktqq2dencmjg4w.svg"
-              alt="wswsw"
-            />
+            <Image className="w-full rounded-md" src={heroImage} alt="wswsw" />
           </div>
         </div>
       </div>

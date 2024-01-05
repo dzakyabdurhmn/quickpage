@@ -10,12 +10,12 @@ import Coment from "./counterNumber";
 const page = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <Hero />
       <Card />
-      <All />
+      <All /> */}
       <Accordion />
-      <Coment />
+      {/* <Coment /> */}
     </>
   );
 };

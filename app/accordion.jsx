@@ -8,162 +8,159 @@ import { Icons } from "../components/icon";
 import localFont from "next/font/local";
 import { Typography } from "@/components/typograpy";
 import "./accordion.css";
+import { accordion } from "@/lib/info";
 const FBlack = localFont({ src: "../public/fonts/Friends-BlackItalic.otf" });
 const FNormal = localFont({ src: "../public/fonts/Friends-Normal.otf" });
 const FsemiBold = localFont({
   src: "../public/fonts/Friends-SemiBoldItalic.otf",
 });
 
-const AccordionDemo = () => (
-  <div className="flex justify-center mt-28 mb-36 ml-10 mr-10">
-    <Accordion.Root
-      className="accordionmobile min max accordiontab accordionmobilemini"
-      type="single"
-      // defaultValue="item-1"
-      collapsible
-    >
-      <div className="mb-10">
-        <div>
-          <AccordionItem value="item-1">
-            <AccordionTrigger>
-              <div className="py-3">
-                <div class="flex items-center  justify-between text-center py-3 px-2">
-                  <Typography
-                    className={`text-[60px] mr-3 ${FBlack.className}`}
-                    variant="h1"
-                  >
-                    01
-                  </Typography>
-                  <Typography
-                    className={`text-sm ml-7 text-start m-3${FsemiBold}`}
-                    variant="h3"
-                  >
-                    learning style
-                  </Typography>
+function AccordionDemo() {
+  const menu = accordion();
+
+  return (
+    <div className="flex justify-center mt-28 mb-36 ml-10 mr-10">
+      <Accordion.Root
+        className="accordionmobile min max accordiontab accordionmobilemini"
+        type="single"
+        // defaultValue="item-1"
+        collapsible
+      >
+        <div className="mb-10">
+          <div>
+            <AccordionItem value="item-1">
+              <AccordionTrigger>
+                <div className="py-3">
+                  <div class="flex items-center  justify-between text-center py-3 px-2">
+                    <Typography
+                      className={`text-[60px] mr-3 ${FBlack.className}`}
+                      variant="h1"
+                    >
+                      {menu[0].id}
+                    </Typography>
+                    <Typography
+                      className={`text-sm ml-7 text-start m-3${FsemiBold}`}
+                      variant="h3"
+                    >
+                      {menu[0].label}
+                    </Typography>
+                  </div>
                 </div>
-              </div>
-            </AccordionTrigger>
-            <AccordionContent>
-              <Typography
-                className={`text-[30px] ml-7 text-start m-3${FsemiBold.className}`}
-                variant="body"
-              >
-                Absolutely. Our platform is designed to accommodate diverse
-                learning styles, providing customizable learning paths and
-                engaging content to suit the unique needs of each student.
-              </Typography>
-            </AccordionContent>
-          </AccordionItem>
+              </AccordionTrigger>
+              <AccordionContent>
+                <Typography
+                  className={`text-[30px] ml-7 text-start m-3${FsemiBold.className}`}
+                  variant="body"
+                >
+                  {menu[0].content}
+                </Typography>
+              </AccordionContent>
+            </AccordionItem>
+          </div>
         </div>
-      </div>
-      {/*  */}
-      <div className="mb-10">
-        <div>
-          <AccordionItem value="item-2">
-            <AccordionTrigger>
-              <div className="py-3">
-                <div class="flex items-center  justify-between text-center py-3 px-2">
-                  <Typography
-                    className={`text-[60px] mr-3 ${FBlack.className}`}
-                    variant="h1"
-                  >
-                    02
-                  </Typography>
-                  <Typography
-                    className={`text-sm ml-7 text-start m-3${FsemiBold}`}
-                    variant="h3"
-                  >
-                    learning style
-                  </Typography>
+        {/*  */}
+        <div className="mb-10">
+          <div>
+            <AccordionItem value="item-2">
+              <AccordionTrigger>
+                <div className="py-3">
+                  <div class="flex items-center  justify-between text-center py-3 px-2">
+                    <Typography
+                      className={`text-[60px] mr-3 ${FBlack.className}`}
+                      variant="h1"
+                    >
+                      {menu[1].id}
+                    </Typography>
+                    <Typography
+                      className={`text-sm ml-7 text-start m-3${FsemiBold}`}
+                      variant="h3"
+                    >
+                      {menu[1].label}
+                    </Typography>
+                  </div>
                 </div>
-              </div>
-            </AccordionTrigger>
-            <AccordionContent>
-              <Typography
-                className={`text-[30px] ml-7 text-start m-3${FsemiBold.className}`}
-                variant="body"
-              >
-                Absolutely. Our platform is designed to accommodate diverse
-                learning styles, providing customizable learning paths and
-                engaging content to suit the unique needs of each student.
-              </Typography>
-            </AccordionContent>
-          </AccordionItem>
+              </AccordionTrigger>
+              <AccordionContent>
+                <Typography
+                  className={`text-[30px] ml-7 text-start m-3${FsemiBold.className}`}
+                  variant="body"
+                >
+                  {menu[1].content}
+                </Typography>
+              </AccordionContent>
+            </AccordionItem>
+          </div>
         </div>
-      </div>
-      {/*  */}
-      <div className="mb-10">
-        <div>
-          <AccordionItem value="item-3">
-            <AccordionTrigger>
-              <div className="py-3">
-                <div class="flex items-center  justify-between text-center py-3 px-2">
-                  <Typography
-                    className={`text-[60px] mr-3 ${FBlack.className}`}
-                    variant="h1"
-                  >
-                    03
-                  </Typography>
-                  <Typography
-                    className={`text-sm ml-7 text-start m-3${FsemiBold}`}
-                    variant="h3"
-                  >
-                    learning style
-                  </Typography>
+        {/*  */}
+        <div className="mb-10">
+          <div>
+            <AccordionItem value="item-3">
+              <AccordionTrigger>
+                <div className="py-3">
+                  <div class="flex items-center  justify-between text-center py-3 px-2">
+                    <Typography
+                      className={`text-[60px] mr-3 ${FBlack.className}`}
+                      variant="h1"
+                    >
+                      {menu[2].id}
+                    </Typography>
+                    <Typography
+                      className={`text-sm ml-7 text-start m-3${FsemiBold}`}
+                      variant="h3"
+                    >
+                      {menu[2].label}
+                    </Typography>
+                  </div>
                 </div>
-              </div>
-            </AccordionTrigger>
-            <AccordionContent>
-              <Typography
-                className={`text-[30px] ml-7 text-start m-3${FsemiBold.className}`}
-                variant="body"
-              >
-                Absolutely. Our platform is designed to accommodate diverse
-                learning styles, providing customizable learning paths and
-                engaging content to suit the unique needs of each student.
-              </Typography>
-            </AccordionContent>
-          </AccordionItem>
+              </AccordionTrigger>
+              <AccordionContent>
+                <Typography
+                  className={`text-[30px] ml-7 text-start m-3${FsemiBold.className}`}
+                  variant="body"
+                >
+                  {menu[2].content}
+                </Typography>
+              </AccordionContent>
+            </AccordionItem>
+          </div>
         </div>
-      </div>
-      {/*  */}
-      <div className="mb-10">
-        <div>
-          <AccordionItem value="item-4">
-            <AccordionTrigger>
-              <div className="py-3">
-                <div class="flex items-center  justify-between text-center py-3 px-2">
-                  <Typography
-                    className={`text-[60px] mr-3 ${FBlack.className}`}
-                    variant="h1"
-                  >
-                    04
-                  </Typography>
-                  <Typography
-                    className={`text-sm ml-7 text-start m-3${FsemiBold}`}
-                    variant="h3"
-                  >
-                    learning style
-                  </Typography>
+        {/*  */}
+        <div className="mb-10">
+          <div>
+            <AccordionItem value="item-4">
+              <AccordionTrigger>
+                <div className="py-3">
+                  <div class="flex items-center  justify-between text-center py-3 px-2">
+                    <Typography
+                      className={`text-[60px] mr-3 ${FBlack.className}`}
+                      variant="h1"
+                    >
+                      {menu[3].id}
+                    </Typography>
+                    <Typography
+                      className={`text-sm ml-7 text-start m-3${FsemiBold}`}
+                      variant="h3"
+                    >
+                      {menu[2].label}
+                    </Typography>
+                  </div>
                 </div>
-              </div>
-            </AccordionTrigger>
-            <AccordionContent>
-              <Typography
-                className={`text-[30px] ml-7 text-start m-3${FsemiBold.className}`}
-                variant="body"
-              >
-                Absolutely. Our platform is designed to accommodate diverse
-                learning styles, providing customizable learning paths and
-                engaging content to suit the unique needs of each student.
-              </Typography>
-            </AccordionContent>
-          </AccordionItem>
+              </AccordionTrigger>
+              <AccordionContent>
+                <Typography
+                  className={`text-[30px] ml-7 text-start m-3${FsemiBold.className}`}
+                  variant="body"
+                >
+                  {menu[2].content}
+                </Typography>
+              </AccordionContent>
+            </AccordionItem>
+          </div>
         </div>
-      </div>
-    </Accordion.Root>
-  </div>
-);
+      </Accordion.Root>
+    </div>
+  );
+}
 
 const AccordionItem = React.forwardRef(
   ({ children, className, ...props }, forwardedRef) => (
