@@ -1,5 +1,5 @@
 import hero from "../assets/image/hero.png";
-
+import animation from "../assets/animation/emoji.json";
 // This is a hero section
 export const name = "MEETING ALL STUDENT NEEDS IN ONE GRASP";
 export const description =
@@ -9,32 +9,17 @@ export const heroImage = hero;
 
 // This is a feature section
 
-export const featureHeader = () => {
-  return <>Lorem ipsum dolor sit amet consectetur adipisicing.</>;
-};
-
-export const featureText = () => {
-  return (
-    <>
-      Features that <br />
-      you'll ever need.
-    </>
-  );
-};
-
-export const featureDescription = () => {
-  return (
-    <>
-      Formcarry form API endpoint offers you the best features that <br />
-      you'll ever need in your form. Keeping simplicity in mind, we've <br />
-      crafted the best way to integrate powerful features into your form within
-      minutes.
-    </>
-  );
-};
+export const lottie = animation;
 
 export const featureContent = () => {
   return [
+    {
+      id: 0,
+      header: "Read this",
+      heading: "Features that  you'll  ever need.",
+      description:
+        "Innovative platform facilitating collaboration and exchange of assignments among students from various schools. With a widely accessible assignment upload feature, this application enables students to share projects, assignments, and relevant information with their peers from different schools. Here are some key features that make",
+    },
     {
       id: 1,
       label: "Send assignment",
