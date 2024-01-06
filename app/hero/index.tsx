@@ -3,11 +3,11 @@ import localFont from "next/font/local";
 import Link from "next/link";
 import Text from "@/components/textanimation";
 import Image from "next/image";
-import { name, description, heroImage } from "../lib/info";
+import { name, description, heroImage } from "../../lib/info";
 
-const FBlack = localFont({ src: "../public/fonts/Friends-BlackItalic.otf" });
-const FNormal = localFont({ src: "../public/fonts/Friends-Normal.otf" });
-const FsemiBold = localFont({ src: "../public/fonts/Friends-SemiBold.otf" });
+const FBlack = localFont({ src: "../../public/fonts/Friends-BlackItalic.otf" });
+const FNormal = localFont({ src: "../../public/fonts/Friends-Normal.otf" });
+const FsemiBold = localFont({ src: "../../public/fonts/Friends-SemiBold.otf" });
 
 function hero({ Component, pageProps }: any) {
   return (

@@ -4,15 +4,15 @@ import React from "react";
 import classNames from "classnames";
 import * as Accordion from "@radix-ui/react-accordion";
 import { Plus } from "@radix-ui/react-icons";
-import { Icons } from "../components/icon";
+import { Icons } from "../../components/icon";
 import localFont from "next/font/local";
 import { Typography } from "@/components/typograpy";
 import "./accordion.css";
 import { accordion } from "@/lib/info";
-const FBlack = localFont({ src: "../public/fonts/Friends-BlackItalic.otf" });
-const FNormal = localFont({ src: "../public/fonts/Friends-Normal.otf" });
+const FBlack = localFont({ src: "../../public/fonts/Friends-BlackItalic.otf" });
+const FNormal = localFont({ src: "../../public/fonts/Friends-Normal.otf" });
 const FsemiBold = localFont({
-  src: "../public/fonts/Friends-SemiBoldItalic.otf",
+  src: "../../public/fonts/Friends-SemiBoldItalic.otf",
 });
 
 function AccordionDemo() {

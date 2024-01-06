@@ -3,16 +3,10 @@
 import React from "react";
 import * as Tabs from "@radix-ui/react-tabs";
 import "./menu.module.scss";
-import "../app/responsive.css";
+import "./responsive.css";
 import Lottie from "lottie-react";
-import emoji from "@/public/emoji.json";
 import localFont from "next/font/local";
-import {
-  featureText,
-  featureHeader,
-  featureDescription,
-  featureContent,
-} from "@/lib/info";
+import { featureContent, lottie } from "@/lib/info";
 import {
   FileTextIcon,
   UploadIcon,
@@ -20,36 +14,38 @@ import {
   LinkBreak2Icon,
 } from "@radix-ui/react-icons";
 
-const FBlack = localFont({ src: "../public/fonts/Friends-BlackItalic.otf" });
-const FNormal = localFont({ src: "../public/fonts/Friends-Normal.otf" });
-const FsemiBold = localFont({ src: "../public/fonts/Friends-SemiBold.otf" });
+const FBlack = localFont({ src: "../../public/fonts/Friends-BlackItalic.otf" });
+const FNormal = localFont({ src: "../../public/fonts/Friends-Normal.otf" });
+const FsemiBold = localFont({ src: "../../public/fonts/Friends-SemiBold.otf" });
 
 function menu() {
   const menu = featureContent();
   return (
     <div className="justify-center items-center flex mt-10">
-      <div className="bg-[#030122]  text-white rounded-3xl roundedNone">
+      <div className="bg-[#030122]  text-white rounded-3xl ">
         <div className="m-12">
           <div className="flex">
-            <div className="flex flex-col  whitespace-nowrap">
+            <div className="flex flex-col  whitespace-normal max-w-[400px]">
               <h1
-                className={`whitespace-nowrap mb-2 text-yellow-400 ${FsemiBold.className}`}
+                className={`whitespace-normal mb-2 text-yellow-400 max-w-[400px] ${FsemiBold.className}`}
               >
-                {featureHeader()}
+                {menu[0].header}
               </h1>
               <h1
-                className={`text-3xl 2xl:text-sm font-semibold  whitespace-nowrap mb-3 ${FBlack.className}`}
+                className={`text-3xl 2xl:text-sm font-semibold  whitespace-normal mb-3 max-w-[400px] ${FBlack.className}`}
               >
-                {featureText()}
+                {menu[0].heading}
               </h1>
-              <p className={`mt-4 whitespace-normal ${FNormal.className}`}>
-                {featureDescription()}
+              <p
+                className={`mt-4 whitespace-normal max-w-[400px] ${FNormal.className}`}
+              >
+                {menu[0].description}
               </p>
             </div>
 
             <Lottie
               className="ml-24 hidden sm:block md:block lg:block"
-              animationData={emoji}
+              animationData={lottie}
               loop={true}
               style={{ height: 200 }}
             />
@@ -67,25 +63,25 @@ function menu() {
                   className="bg-white px-5 h-[45px] flex-1 flex items-center justify-center text-[15px] leading-none text-mauve11 select-none rounded-xl hover:text-violet11 data-[state=active]:text-violet11 data-[state=active]:bg-yellow-300 data-[state=active]:shadow-current data-[state=active]:focus:relative data-[state=active]:focus:shadow-[0_0_0_2px]  outline-none cursor-default whitespace-nowrap py-3"
                   value="sendassignment"
                 >
-                  {menu[0].label}
+                  {menu[1].label}
                 </Tabs.Trigger>
                 <Tabs.Trigger
                   className="bg-white px-5 h-[45px] flex-1 flex items-center justify-center text-[15px] leading-none text-mauve11 select-none rounded-xl hover:text-violet11 data-[state=active]:text-violet11 data-[state=active]:bg-yellow-300 data-[state=active]:shadow-current data-[state=active]:focus:relative data-[state=active]:focus:shadow-[0_0_0_2px]  outline-none cursor-default whitespace-nowrap py-3"
                   value="notation"
                 >
-                  {menu[1].label}
+                  {menu[2].label}
                 </Tabs.Trigger>
                 <Tabs.Trigger
                   className="bg-white px-5 h-[45px] flex-1 flex items-center justify-center text-[15px] leading-none text-mauve11 select-none rounded-xl hover:text-violet11 data-[state=active]:text-violet11 data-[state=active]:bg-yellow-300 data-[state=active]:shadow-current data-[state=active]:focus:relative data-[state=active]:focus:shadow-[0_0_0_2px]  outline-none cursor-default whitespace-nowrap py-3"
                   value="discussion"
                 >
-                  {menu[2].label}
+                  {menu[3].label}
                 </Tabs.Trigger>
                 <Tabs.Trigger
                   className="bg-white px-5 h-[45px] flex-1 flex items-center justify-center text-[15px] leading-none text-mauve11 select-none rounded-xl hover:text-violet11 data-[state=active]:text-violet11 data-[state=active]:bg-yellow-300 data-[state=active]:shadow-current data-[state=active]:focus:relative data-[state=active]:focus:shadow-[0_0_0_2px]  outline-none cursor-default whitespace-nowrap py-3"
                   value="connected"
                 >
-                  {menu[3].label}
+                  {menu[4].label}
                 </Tabs.Trigger>
               </Tabs.List>
               <div className="mt-3">
@@ -96,11 +92,11 @@ function menu() {
                         <UploadIcon width={30} height={30} />
                       </div>
                       <div className="mt-3 text-start">
-                        <p className="text-yellow-400"> {menu[0].label}</p>
+                        <p className="text-yellow-400"> {menu[1].label}</p>
                         <h1 className="mt-3 text-2xl font-semibold">
-                          {menu[0].title}{" "}
+                          {menu[1].title}{" "}
                         </h1>
-                        <p className="mt-3">{menu[0].content}</p>
+                        <p className="mt-3">{menu[1].content}</p>
                       </div>
                     </div>
                   </div>
@@ -113,11 +109,11 @@ function menu() {
                           <FileTextIcon width={30} height={30} />
                         </div>
                         <div className="mt-3 text-start">
-                          <p className="text-yellow-400">{menu[1].label}</p>
+                          <p className="text-yellow-400">{menu[2].label}</p>
                           <h1 className="mt-3 text-2xl font-semibold">
-                            {menu[1].title}
+                            {menu[2].title}
                           </h1>
-                          <p className="mt-3">{menu[1].content}</p>
+                          <p className="mt-3">{menu[2].content}</p>
                         </div>
                       </div>
                     </div>
@@ -131,11 +127,11 @@ function menu() {
                           <ChatBubbleIcon width={30} height={30} />
                         </div>
                         <div className="mt-3 text-start">
-                          <p className="text-yellow-400">{menu[2].label}</p>
+                          <p className="text-yellow-400">{menu[3].label}</p>
                           <h1 className="mt-3 text-2xl font-semibold">
-                            {menu[2].title}{" "}
+                            {menu[3].title}{" "}
                           </h1>
-                          <p className="mt-3">{menu[2].content}</p>
+                          <p className="mt-3">{menu[3].content}</p>
                         </div>
                       </div>
                     </div>
@@ -149,11 +145,11 @@ function menu() {
                           <LinkBreak2Icon width={30} height={30} />
                         </div>
                         <div className="mt-3 text-start">
-                          <p className="text-yellow-400">{menu[3].label}</p>
+                          <p className="text-yellow-400">{menu[4].label}</p>
                           <h1 className="mt-3 text-2xl font-semibold">
-                            {menu[3].title}
+                            {menu[4].title}
                           </h1>
-                          <p className="mt-3">{menu[3].content}</p>
+                          <p className="mt-3">{menu[4].content}</p>
                         </div>
                       </div>
                     </div>

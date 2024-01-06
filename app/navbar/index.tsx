@@ -6,7 +6,7 @@ import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import { HamburgerMenuIcon, Cross1Icon } from "@radix-ui/react-icons";
 import "./style.css";
 import { Icons } from "@/components/icon";
-import { Button } from "./button";
+import { Button } from "../../components/button";
 import MobileNav from "./mobileNav";
 function page() {
   const [isOpen, setIsOpen] = useState(false);
