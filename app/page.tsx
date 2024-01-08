@@ -1,24 +1,30 @@
 import React from "react";
-import Navbar from "./navbar";
-import Hero from "./hero";
-import Card from "./card";
-import All from "./feature";
-import Accordion from "./accordion";
-import Footer from "./footer";
-import Coment from "./counterNumber";
-import PricingTables from "./price";
-const page = () => {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <Card />
-      <All />
-      <PricingTables />
-      <Accordion />
-      <Coment />
-    </>
-  );
-};
+import Navbar from "@/section/navbar";
+import Hero from "@/section/hero";
+import Card from "@/section/card";
+import Feature from "@/section/feature";
+import Accordion from "@/section/accordion";
+import Footer from "@/section/footer";
+import PricingTables from "@/section/price";
+import Stats from "@/section/stats";
+import Docs from "./docs";
+import { isProduction } from "@/lib/info";
 
-export default page;
+export default function App() {
+  if (isProduction) {
+    return (
+      <>
+        <Navbar />
+        <Hero />
+        <Card />
+        <Feature />
+        <PricingTables />
+        <Accordion />
+        <Stats />
+        <Footer />
+      </>
+    );
+  } else {
+    return <Docs />;
+  }
+}

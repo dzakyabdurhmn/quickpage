@@ -19,7 +19,7 @@ function AccordionDemo() {
   const menu = accordion();
 
   return (
-    <div className="flex justify-center mt-28 mb-36 ml-10 mr-10">
+    <div className="flex justify-center mt-28 mb-10 ml-10 mr-10">
       <Accordion.Root
         className="accordionmobile min max accordiontab accordionmobilemini"
         type="single"
