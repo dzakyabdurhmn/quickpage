@@ -1,5 +1,17 @@
 import hero from "../assets/image/hero.png";
 import animation from "../assets/animation/emoji.json";
+//
+import adobe from "../assets/image/company/adobe.png";
+import amazone from "../assets/image/company/amazone.png";
+import asana from "../assets/image/company/asana.png";
+import evernote from "../assets/image/company/evernote.png";
+import google from "../assets/image/company/google.png";
+import microsoft from "../assets/image/company/microsoft.png";
+import paypal from "../assets/image/company/paypal.png";
+import shopify from "../assets/image/company/shopify.png";
+import spotify from "../assets/image/company/spotify.png";
+import uber from "../assets/image/company/uber.png";
+
 export const isProduction = true;
 
 // This is a site information
@@ -120,5 +132,12 @@ export const projects = [
     src: "https://res.cloudinary.com/dfnxmrqmt/image/upload/v1702880068/paralax-assets/x8ctsedtpaoyu7ek2eqh.svg",
     link: "https://www.ignant.com/2019/03/13/a-photographic-series-depicting-the-uncertain-future-of-denmarks-treasured-coastlines/",
     color: "#ffff",
+  },
+];
+
+export const company = [
+  {
+    id: 1,
+    logo: <img src={adobe} alt="adobe" />,
   },
 ];
