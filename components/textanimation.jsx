@@ -5,7 +5,7 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Title = styled.p`
-  font-size: 3rem;
+  font-size: 30px;
   font-weight: 600;
 `;
 
@@ -20,8 +20,8 @@ const Character = styled(motion.span)`
   margin-right: -0.05em;
 `;
 
-export default function AnimatedTitle() {
-  const text = " MEETING ALL STUDENT NEEDS IN ONE GRASP."; // This would normally be passed into this component as a prop!
+export default function AnimatedTitle(props) {
+  const text = props.text; // This would normally be passed into this component as a prop!
 
   const ctrls = useAnimation();
 

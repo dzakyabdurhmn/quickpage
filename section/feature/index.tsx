@@ -13,7 +13,9 @@ import {
   ChatBubbleIcon,
   LinkBreak2Icon,
 } from "@radix-ui/react-icons";
-
+import Text from "../../components/textanimation";
+import { motion } from "framer-motion";
+import IconAnimation from "./scale-icon";
 const FBlack = localFont({ src: "../../public/fonts/Friends-BlackItalic.otf" });
 const FNormal = localFont({ src: "../../public/fonts/Friends-Normal.otf" });
 const FsemiBold = localFont({ src: "../../public/fonts/Friends-SemiBold.otf" });
@@ -22,7 +24,7 @@ function menu() {
   const menu = featureContent();
   return (
     <div className="justify-center items-center flex mt-10">
-      <div className="bg-[#030122]  text-white rounded-3xl ">
+      <div className="bg-[#B9A0FF]  text-white rounded-3xl roundedNone">
         <div className="m-12">
           <div className="flex">
             <div className="flex flex-col  whitespace-normal max-w-[400px]">
@@ -89,12 +91,29 @@ function menu() {
                   <div className="text-white mt-8">
                     <div className="flex flex-col">
                       <div className="bg-yellow-400 px-3 py-3 max-w-14 rounded-full">
-                        <UploadIcon width={30} height={30} />
+                        {/* <motion.div
+                          // className="box"
+                          animate={{
+                            scale: [0.1, 0.5, 0.7, 1, 1],
+                            rotate: [0, 0, 180, 180, 0],
+                            borderRadius: ["0%", "0%", "50%", "50%", "0%"],
+                          }}
+                          transition={{
+                            duration: 2,
+                            ease: "easeInOut",
+                            times: [0, 0.2, 0.5, 0.8, 1],
+                          }}
+                        >
+                          <UploadIcon width={30} height={30} />
+                        </motion.div> */}
+                        <IconAnimation>
+                          <UploadIcon width={30} height={30} />
+                        </IconAnimation>
                       </div>
                       <div className="mt-3 text-start">
                         <p className="text-yellow-400"> {menu[1].label}</p>
-                        <h1 className="mt-3 text-2xl font-semibold">
-                          {menu[1].title}{" "}
+                        <h1 className="mt-3 -mb-2 font-semibold">
+                          <Text text={menu[1].title} />
                         </h1>
                         <p className="mt-3">{menu[1].content}</p>
                       </div>
@@ -106,12 +125,14 @@ function menu() {
                     <div className="text-white mt-8">
                       <div className="flex flex-col">
                         <div className="bg-yellow-400 px-3 py-3 max-w-14 rounded-full">
-                          <FileTextIcon width={30} height={30} />
+                          <IconAnimation>
+                            <FileTextIcon width={30} height={30} />
+                          </IconAnimation>
                         </div>
                         <div className="mt-3 text-start">
                           <p className="text-yellow-400">{menu[2].label}</p>
-                          <h1 className="mt-3 text-2xl font-semibold">
-                            {menu[2].title}
+                          <h1 className="mt-3 -mb-2 font-semibold">
+                            <Text text={menu[1].title} />
                           </h1>
                           <p className="mt-3">{menu[2].content}</p>
                         </div>
@@ -124,12 +145,14 @@ function menu() {
                     <div className="text-white mt-8">
                       <div className="flex flex-col">
                         <div className="bg-yellow-400 px-3 py-3 max-w-14 rounded-full">
-                          <ChatBubbleIcon width={30} height={30} />
+                          <IconAnimation>
+                            <ChatBubbleIcon width={30} height={30} />
+                          </IconAnimation>
                         </div>
                         <div className="mt-3 text-start">
                           <p className="text-yellow-400">{menu[3].label}</p>
-                          <h1 className="mt-3 text-2xl font-semibold">
-                            {menu[3].title}{" "}
+                          <h1 className="mt-3 -mb-2 font-semibold">
+                            <Text text={menu[1].title} />
                           </h1>
                           <p className="mt-3">{menu[3].content}</p>
                         </div>
@@ -142,12 +165,14 @@ function menu() {
                     <div className="text-white mt-8">
                       <div className="flex flex-col">
                         <div className="bg-yellow-400 px-3 py-3 max-w-14 rounded-full">
-                          <LinkBreak2Icon width={30} height={30} />
+                          <IconAnimation>
+                            <LinkBreak2Icon width={30} height={30} />
+                          </IconAnimation>
                         </div>
                         <div className="mt-3 text-start">
                           <p className="text-yellow-400">{menu[4].label}</p>
-                          <h1 className="mt-3 text-2xl font-semibold">
-                            {menu[4].title}
+                          <h1 className="mt-3 -mb-2 font-semibold">
+                            <Text text={menu[1].title} />
                           </h1>
                           <p className="mt-3">{menu[4].content}</p>
                         </div>

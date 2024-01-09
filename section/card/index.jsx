@@ -5,6 +5,8 @@ import Card from "./card";
 import { useScroll } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
+import Image from "next/image";
+import Robot from "../../assets/image/robot.png";
 
 export default function Home() {
   const container = useRef(null);

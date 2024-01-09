@@ -16,12 +16,12 @@ export default function App() {
       <>
         <Navbar />
         <Hero />
-        <Card />
+        {/* <Card /> */}
         <Feature />
         <PricingTables />
         <Accordion />
-        <Stats />
-        <Footer />
+        {/* <Stats /> */}
+        {/* <Footer /> */}
       </>
     );
   } else {
