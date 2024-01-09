@@ -24,10 +24,10 @@ function menu() {
   const menu = featureContent();
   return (
     <div className="justify-center items-center flex mt-10">
-      <div className="bg-[#B9A0FF]  text-white rounded-3xl roundedNone">
+      <div className="bg-[#B9A0FF]  text-[#fff] rounded-3xl roundedNone">
         <div className="m-12">
           <div className="flex">
-            <div className="flex flex-col  whitespace-normal max-w-[400px]">
+            <div className="flex flex-col  whitespace-normal max-w-[1200px]">
               <h1
                 className={`whitespace-normal mb-2 text-yellow-400 max-w-[400px] ${FsemiBold.className}`}
               >
@@ -54,7 +54,7 @@ function menu() {
           </div>
           <div className="mt-20">
             <Tabs.Root
-              className="flex flex-col max-w-[600px] shadow-[0_2px_10px] shadow-blackA2"
+              className="flex flex-col max-w-[600px]"
               defaultValue="sendassignment"
             >
               <Tabs.List

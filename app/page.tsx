@@ -8,6 +8,8 @@ import Footer from "@/section/footer";
 import PricingTables from "@/section/price";
 import Stats from "@/section/stats";
 import Docs from "./docs";
+import Company from "../section/company";
+import CardContent from "@/section/card-content";
 import { isProduction } from "@/lib/info";
 
 export default function App() {
@@ -16,9 +18,11 @@ export default function App() {
       <>
         <Navbar />
         <Hero />
+        <Company />
         {/* <Card /> */}
+        {/* <PricingTables /> */}
+        <CardContent />
         <Feature />
-        <PricingTables />
         <Accordion />
         {/* <Stats /> */}
         {/* <Footer /> */}
