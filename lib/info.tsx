@@ -138,6 +138,87 @@ export const projects = [
 export const company = [
   {
     id: 1,
-    logo: <img src={adobe} alt="adobe" />,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857789/company/yslmkzamhtmiftwya0u6.png",
+  },
+  {
+    id: 2,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857789/company/bl2krhgxhshfnbljzyxl.png",
+  },
+  {
+    id: 3,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857789/company/zpk7yukyz4l8uxyclc7c.png",
+  },
+  {
+    id: 4,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857789/company/sjtreillctteunctbmri.png",
+  },
+  {
+    id: 5,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857788/company/bfcqjcy6nq9a14gqfegh.png",
+  },
+  //
+  {
+    id: 1,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857788/company/ehrdtgnu8xwx0ak70oai.png",
+  },
+  {
+    id: 2,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857788/company/dpphaotrcpvfe66itpg2.png",
+  },
+  {
+    id: 3,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857788/company/j1zvk0vzgpst9uncmomj.png",
+  },
+  {
+    id: 4,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857788/company/y535jmmaxnwqevkinzuz.png",
+  },
+  {
+    id: 5,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857788/company/r69ioxchmbunfpkfjyt9.png",
+  },
+];
+
+export const companyRight = [
+  {
+    id: 1,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857788/company/ehrdtgnu8xwx0ak70oai.png",
+  },
+  {
+    id: 2,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857788/company/dpphaotrcpvfe66itpg2.png",
+  },
+  {
+    id: 3,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857788/company/j1zvk0vzgpst9uncmomj.png",
+  },
+  {
+    id: 4,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857788/company/y535jmmaxnwqevkinzuz.png",
+  },
+  {
+    id: 5,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857788/company/r69ioxchmbunfpkfjyt9.png",
+  },
+  //
+  {
+    id: 1,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857789/company/yslmkzamhtmiftwya0u6.png",
+  },
+  {
+    id: 2,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857789/company/bl2krhgxhshfnbljzyxl.png",
+  },
+  {
+    id: 3,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857789/company/zpk7yukyz4l8uxyclc7c.png",
+  },
+  {
+    id: 4,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857789/company/sjtreillctteunctbmri.png",
+  },
+  {
+    id: 5,
+    logo: "https://res.cloudinary.com/derwgb2aj/image/upload/v1704857788/company/bfcqjcy6nq9a14gqfegh.png",
   },
 ];
