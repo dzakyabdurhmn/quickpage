@@ -6,6 +6,9 @@ import Text from "@/components/textanimation";
 import Image from "next/image";
 import { name, description, heroImage } from "../../lib/info";
 import Lottie from "lottie-react";
+import { motion } from "framer-motion";
+import AnimationText from "../../components/textanimation";
+
 // import ghostAnimation from "../../assets/animation/ghost.json";
 import { Button } from "@/components/button";
 const FBlack = localFont({ src: "../../public/fonts/Friends-BlackItalic.otf" });
@@ -13,6 +16,22 @@ const FNormal = localFont({ src: "../../public/fonts/Friends-Normal.otf" });
 const FsemiBold = localFont({ src: "../../public/fonts/Friends-SemiBold.otf" });
 
 function hero({ Component, pageProps }: any) {
+  const transitionValues = {
+    duration: 0.8,
+    yoyo: Infinity,
+    ease: "easeOut",
+  };
+
+  const ballStyle = {
+    display: "block",
+    width: "5rem",
+    height: "5rem",
+    backgroundColor: "white",
+    borderRadius: "5rem",
+    marginRight: "auto",
+    marginLeft: "auto",
+  };
+
   return (
     <div>
       <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,7 +47,10 @@ function hero({ Component, pageProps }: any) {
             <h1
               className={`"block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight -mt-10" ${FBlack.className}`}
             >
-              {name}
+              <AnimationText
+                className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight -mt-10"
+                text={name}
+              />
             </h1>
             <p
               className={`mt-3 text-lg text-gray-800 dark:text-gray-400 ${FNormal.className}`}
@@ -44,20 +66,32 @@ function hero({ Component, pageProps }: any) {
               </Link> */}
               <Button
                 variant={"purple"}
-                className={`py-5 px-16 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200  shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-white  dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 ${FsemiBold.className}`}
+                className={`py-5 px-16 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200  shadow-sm hover:bg-[#003F30] disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-white  dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 ${FsemiBold.className}`}
               >
                 Get ssss
               </Button>
             </div>
           </div>
           <div className="relative ms-4">
-            <Image
-              className="w-full rounded-md hidden md:flex"
-              width={100}
-              height={50}
-              src={heroImage}
-              alt="wswsw"
-            />
+            <motion.span
+              // style={ballStyle}
+              transition={{
+                y: transitionValues,
+                width: transitionValues,
+                height: transitionValues,
+              }}
+              animate={{
+                y: ["2rem", "8rem", "10rem"],
+                width: ["5rem", "5rem", "6rem"],
+                height: ["5rem", "5rem", "4rem"],
+              }}
+            >
+              <Image
+                className="w-full hidden md:flex"
+                src={heroImage}
+                alt="wswsw"
+              />
+            </motion.span>
           </div>
         </div>
       </div>
