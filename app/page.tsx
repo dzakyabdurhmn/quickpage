@@ -8,7 +8,7 @@ import Footer from "@/section/footer";
 import PricingTables from "@/section/price";
 import Stats from "@/section/stats";
 import Docs from "./docs";
-import Company from "../section/company";
+import Company from "../section/company/test";
 import CardContent from "@/section/card-content";
 import { isProduction } from "@/lib/info";
 
@@ -21,11 +21,12 @@ export default function App() {
         <Company />
         {/* <Card /> */}
         {/* <PricingTables /> */}
-        <CardContent />
+        {/* {/* <CardContent /> */}
         <Feature />
-        <Accordion />
+        {/* <Accordion /> */}
         {/* <Stats /> */}
-        {/* <Footer /> */}
+        <Footer />
+        <></>
       </>
     );
   } else {
