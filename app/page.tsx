@@ -10,22 +10,32 @@ import Stats from "@/section/stats";
 import Docs from "./docs";
 import Company from "../section/company/test";
 import CardContent from "@/section/card-content";
+import Comment from "../section/pepole-say";
 import { isProduction } from "@/lib/info";
 
 export default function App() {
   if (isProduction) {
     return (
       <>
-        <Navbar />
-        <Hero />
-        <Company />
-        {/* <Card /> */}
-        {/* <PricingTables /> */}
-        {/* {/* <CardContent /> */}
-        <Feature />
-        {/* <Accordion /> */}
-        {/* <Stats /> */}
-        <Footer />
+        <div className="flex flex-col h-screen">
+          <header className="p-4">
+            <Navbar />
+          </header>
+          <main className="p-4 flex-grow ">
+            <Hero />
+            <Company />
+            {/* <Card /> */}
+            {/* <PricingTables /> */}
+            {/* <CardContent /> */}
+            <Feature />
+            <Comment />
+            <Accordion />
+            {/* <Stats /> */}
+          </main>
+          <footer className="p-4">
+            <Footer />;
+          </footer>
+        </div>
         <></>
       </>
     );
