@@ -113,7 +113,7 @@ function menu() {
                       <div className="mt-3 text-start">
                         <p className="text-yellow-400"> {menu[1].label}</p>
                         <h1 className="mt-3 -mb-2 font-semibold">
-                          <Text text={menu[1].title} />
+                          <Text text={menu[3].title} />
                         </h1>
                         <p className="mt-3">{menu[1].content}</p>
                       </div>
@@ -132,7 +132,7 @@ function menu() {
                         <div className="mt-3 text-start">
                           <p className="text-yellow-400">{menu[2].label}</p>
                           <h1 className="mt-3 -mb-2 font-semibold">
-                            <Text text={menu[1].title} />
+                            <Text text={menu[2].title} />
                           </h1>
                           <p className="mt-3">{menu[2].content}</p>
                         </div>
@@ -172,7 +172,7 @@ function menu() {
                         <div className="mt-3 text-start">
                           <p className="text-yellow-400">{menu[4].label}</p>
                           <h1 className="mt-3 -mb-2 font-semibold">
-                            <Text text={menu[1].title} />
+                            <Text text={menu[4].title} />
                           </h1>
                           <p className="mt-3">{menu[4].content}</p>
                         </div>
