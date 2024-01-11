@@ -10,10 +10,10 @@ import {
 
 function index() {
   return (
-    <div className="flex items-center justify-center mt-20 max-w-max  mx-auto max-w-[1000px]">
-      <div className="flex flex-col p-9 flex-col space-y-8 ml-10 mr-10">
-        <div className="flex-col xl:flex">
-          <p className="border flex flex-col space-y-4 border-[3px] rounded-xl px-7 border-gray-950 max-w- py-7 mb-10">
+    <div className="flex items-center justify-center mt-20  mx-auto max-w-[1000px]">
+      <div className="flex flex-col  space-y-8">
+        <div className="flex-row xl:gap-4 xl:flex">
+          <p className="flex flex-col space-y-4 border-[3px] rounded-xl px-7 border-gray-950 max-w- py-7">
             <span>
               “Koo started to adopt BentoML more than a year ago as a platform
               of choice for model deployments and monitoring. From our early
@@ -29,7 +29,7 @@ function index() {
               <span className="font-bold">Koosssss</span>
             </span>
           </p>
-          <p className="border border-[3px] space-y-7 rounded-xl flex flex-col border-black px-7  py-7">
+          <p className=" border-[3px] space-y-7 mt-5 xl:mt-0 rounded-xl flex flex-col border-black px-7  py-7">
             <span>
               “Koo started to adopt BentoML more than a year ago as a platform
               of choice for model deployments and monitoring. From our early
@@ -42,8 +42,8 @@ function index() {
           </p>
         </div>
         {/*  */}
-        <div className="flex-col xl:flex gap-3">
-          <p className="border border-[3px] space-y-7 rounded-xl flex flex-col border-black px-7  py-7 mb-10">
+        <div className="flex-row xl:flex gap-5">
+          <p className="border-[3px] space-y-7 rounded-xl flex flex-col border-black px-7  py-7">
             <span>
               “Koo started to adopt BentoML more than a year ago as a platform
               of choice for model deployments and monitoring. From our early
@@ -54,7 +54,7 @@ function index() {
               <span className="font-bold">Koosss</span>
             </span>
           </p>
-          <p className="border flex flex-col space-y-4 border-[3px] rounded-xl px-7 border-gray-950 max-w- py-7">
+          <p className="flex flex-col space-y-4 mt-5  xl:mt-0 border-[3px] rounded-xl px-7 border-gray-950 max-w- py-7">
             <span>
               “Koo started to adopt BentoML more than a year ago as a platform
               of choice for model deployments and monitoring. From our early
@@ -71,8 +71,8 @@ function index() {
             </span>
           </p>
         </div>
-        <div className="flex  space-x-4">
-          <p className="border flex flex-col space-y-4 border-[3px] rounded-xl px-7 border-gray-950 max-w- py-7">
+        <div className="flex space-x-4">
+          <p className=" flex flex-col space-y-4 border-[3px] rounded-xl px-7 border-gray-950 max-w- py-7">
             <span>
               “Koo started to adopt BentoML more than a year ago as a platform
               of choice for model deployments and monitoring. From our early

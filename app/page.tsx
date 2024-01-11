@@ -26,15 +26,15 @@ export default function App() {
             <Navbar />
           </header>
           <main className="p-4 flex-grow ">
-            <Hero />
+            {/* <Hero /> */}
             <Company />
             {/* <Card /> */}
             {/* <PricingTables /> */}
             {/* <CardContent /> */}
-            <Feature />
+            {/* <Feature /> */}
             {/* <Comment /> */}
-            <Accordion />
-            <SeCC />
+            {/* <Accordion /> */}
+            {/* <SeCC /> */}
             {/* <CardContentA /> */}
             {/* <Stats /> */}
             {/* <Cookie /> */}
