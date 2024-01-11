@@ -1,0 +1,48 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: lightgrey;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.textContainer {
+  position: relative;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.4s;
+}
+
+.textContainer p {
+  font-size: 8vw;
+  line-height: 8vw;
+  font-weight: 700;
+  margin: 0px;
+  color: white;
+  transition: property-name 0.4s;
+}
+
+.textContainer .secondary {
+  position: absolute;
+  top: 0;
+  color: black;
+  opacity: 0;
+  transform: rotateX(-90deg) translateY(3.5vw);
+  transform-origin: bottom center;
+}
+
+.textContainer:hover {
+  transform: rotateX(90deg);
+}
+
+.textContainer:hover .primary {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.textContainer:hover .secondary {
+  opacity: 1;
+}
