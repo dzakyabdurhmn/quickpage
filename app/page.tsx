@@ -12,7 +12,7 @@ import Docs from "./docs";
 import Company from "../section/company/test";
 import CardContent from "@/section/card-content";
 import Comment from "../section/pepole-say";
-import CardContentA from "../section/card-blur";
+import CardContentA from "../section/card-bulr/index";
 import SeCC from "../section/second-header/page";
 import Cookie from "@/components/cookie";
 import { isProduction } from "@/lib/info";
@@ -32,12 +32,12 @@ export default function App() {
             {/* <PricingTables /> */}
             {/* <CardContent /> */}
             <Feature />
-            <Comment />
+            {/* <Comment /> */}
             <Accordion />
             <SeCC />
-            <CardContentA />
+            {/* <CardContentA /> */}
             {/* <Stats /> */}
-            <Cookie />
+            {/* <Cookie /> */}
           </main>
           <footer className="p-4">
             <Footer />;
