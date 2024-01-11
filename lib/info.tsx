@@ -51,7 +51,7 @@ export const featureContent = () => {
     {
       id: 2,
       label: "Notation",
-      title: "Aesthetic Notes: Elevate Your Learning Experience",
+      title: "Elevate Your Learning Experience",
       content:
         "The Aesthetic Notes feature in this application provides students with a more immersive experience beyond traditional note-taking. With the ability to create aesthetically pleasing notes, students can express their creativity while enhancing the effectiveness of their learning.",
     },
