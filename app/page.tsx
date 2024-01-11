@@ -16,6 +16,15 @@ import CardContentA from "../section/card-bulr/index";
 import SeCC from "../section/second-header/page";
 import Cookie from "@/components/cookie";
 import { isProduction } from "@/lib/info";
+import Cruve from "./cruve";
+import Anm from "./anm";
+
+// gradient color
+
+import GradientHero from "../section/with-gradient/hero";
+import GradientCompany from "../section/with-gradient/company";
+import GradientFeature from "../section/with-gradient/feature";
+import GradientFooter from "../section/with-gradient/footer";
 
 export default function App() {
   if (isProduction) {
@@ -26,21 +35,22 @@ export default function App() {
             <Navbar />
           </header>
           <main className="p-4 flex-grow ">
-            {/* <Hero /> */}
-            <Company />
-            {/* <Card /> */}
+            <Anm />
+            <GradientHero />
+            <GradientCompany />
+            <Card />
             {/* <PricingTables /> */}
             {/* <CardContent /> */}
-            {/* <Feature /> */}
+            <GradientFeature />
             {/* <Comment /> */}
             {/* <Accordion /> */}
-            {/* <SeCC /> */}
+            <SeCC />
             {/* <CardContentA /> */}
             {/* <Stats /> */}
             {/* <Cookie /> */}
           </main>
           <footer className="p-4">
-            <Footer />;
+            <Footer />
           </footer>
         </div>
         <></>
