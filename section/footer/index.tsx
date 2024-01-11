@@ -39,13 +39,15 @@ import React from "react";
 
 function index() {
   return (
-    <div className="px-10 roundedNoneAdam">
-      <div className="bg-[#EDFAE4] rounded-t-3xl roundedNone  max-w-[1500px] mt-20 justify-center mx-auto">
+    <div className="px-10 roundedNoneAdam -mb-12">
+      <div className="bg-[#EDFAE4] rounded-t-3xl roundedNone  max-w-[1500px] mt-20 justify-center mx-auto flex flex-col">
         <div className="flow-root p-10">
           <p className="float-left flex items-center justify-center mt-20  mx-auto max-w-[700px]">
-            Welcome to GeeksforGeeks
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam rem
+            consequuntur eum nobis id obcaecati tempora, beatae nesciunt dolor
+            quia.
           </p>
-          <div className="float-right">
+          <div className="float-right justify-center flex">
             <>
               <div className="flex items-center justify-center mt-20  mx-auto max-w-[700px]">
                 <div className="flex flex-col  justify-center  space-y-8">
@@ -154,6 +156,26 @@ function index() {
             </>
           </div>
         </div>
+        {/* <div className="p-10">
+          <div className="flex md:flex-col gap-10 justify-between">
+            <div className="flex flex-col">
+              <h1 className="font-bold text-2xl">
+                Judullll
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum.</li>
+              </h1>
+            </div>
+            <div>llormmm</div>
+            <div>llormmm</div>
+          </div>
+        </div> */}
       </div>
     </div>
   );
