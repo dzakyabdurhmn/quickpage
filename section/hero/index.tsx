@@ -48,7 +48,7 @@ function hero({ Component, pageProps }: any) {
               className={`"block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight -mt-10" ${FBlack.className}`}
             >
               <AnimationText
-                className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight -mt-10"
+                className="block text-6xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight -mt-10"
                 text={name}
               />
             </h1>

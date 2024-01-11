@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Navbar from "@/section/navbar";
 import Hero from "@/section/hero";
@@ -11,6 +12,9 @@ import Docs from "./docs";
 import Company from "../section/company/test";
 import CardContent from "@/section/card-content";
 import Comment from "../section/pepole-say";
+import CardContentA from "../section/card-blur";
+import SeCC from "../section/second-header/page";
+import Cookie from "@/components/cookie";
 import { isProduction } from "@/lib/info";
 
 export default function App() {
@@ -30,7 +34,10 @@ export default function App() {
             <Feature />
             <Comment />
             <Accordion />
+            <SeCC />
+            <CardContentA />
             {/* <Stats /> */}
+            <Cookie />
           </main>
           <footer className="p-4">
             <Footer />;
