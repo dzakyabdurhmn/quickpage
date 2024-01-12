@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Card,
@@ -7,90 +8,96 @@ import {
   CardHeader,
   CardTitle,
 } from "../../components/card";
+// import Marquee from "@/components/marquee-element";
 
 function index() {
   return (
-    <div className="flex items-center justify-center mt-20  mx-auto max-w-[1000px]">
-      <div className="flex flex-col  space-y-8">
-        <div className="flex-row xl:gap-4 xl:flex">
-          <p className="flex flex-col space-y-4 border-[3px] rounded-xl px-7 border-gray-950 max-w- py-7">
-            <span>
-              “Koo started to adopt BentoML more than a year ago as a platform
-              of choice for model deployments and monitoring. From our early
-              experience it was clear that deploying ML models, a statistic that
-              most companies struggle with, was a solved problem for Koo. The
-              BentoML team works closely with their community of users like I've
-              never seen before. Their AMAs, the advocacy on Slack and getting
-              on calls with their customers, are much appreciated by
-              early-adopters and seasoned users”
-            </span>
-            <span className="font-semibold">
-              Harsh Singhal, Head of Machine Learning,{" "}
-              <span className="font-bold">Koosssss</span>
-            </span>
-          </p>
-          <p className=" border-[3px] space-y-7 mt-5 xl:mt-0 rounded-xl flex flex-col border-black px-7  py-7">
-            <span>
-              “Koo started to adopt BentoML more than a year ago as a platform
-              of choice for model deployments and monitoring. From our early
-              experience it was clear that deploying ML models, a statistic that
-            </span>
-            <span className="font-semibold">
-              Harsh Singhal, Head of Machine Learning,{" "}
-              <span className="font-bold">Koo</span>
-            </span>
-          </p>
-        </div>
-        {/*  */}
-        <div className="flex-row xl:flex gap-5">
-          <p className="border-[3px] space-y-7 rounded-xl flex flex-col border-black px-7  py-7">
-            <span>
-              “Koo started to adopt BentoML more than a year ago as a platform
-              of choice for model deployments and monitoring. From our early
-              experience it was clear that deploying ML models, a statistic that
-            </span>
-            <span className="font-semibold">
-              Harsh Singhal, Head of Machine Learning,{" "}
-              <span className="font-bold">Koosss</span>
-            </span>
-          </p>
-          <p className="flex flex-col space-y-4 mt-5  xl:mt-0 border-[3px] rounded-xl px-7 border-gray-950 max-w- py-7">
-            <span>
-              “Koo started to adopt BentoML more than a year ago as a platform
-              of choice for model deployments and monitoring. From our early
-              experience it was clear that deploying ML models, a statistic that
-              most companies struggle with, was a solved problem for Koo. The
-              BentoML team works closely with their community of users like I've
-              never seen before. Their AMAs, the advocacy on Slack and getting
-              on calls with their customers, are much appreciated by
-              early-adopters and seasoned users”
-            </span>
-            <span className="font-semibold">
-              Harsh Singhal, Head of Machine Learning,{" "}
-              <span className="font-bold">Koo</span>
-            </span>
-          </p>
-        </div>
-        <div className="flex space-x-4">
-          <p className=" flex flex-col space-y-4 border-[3px] rounded-xl px-7 border-gray-950 max-w- py-7">
-            <span>
-              “Koo started to adopt BentoML more than a year ago as a platform
-              of choice for model deployments and monitoring. From our early
-              experience it was clear that deploying ML models, a statistic that
-              most companies struggle with, was a solved problem for Koo. The
-              BentoML team works closely with their community of users like I've
-              never seen before. Their AMAs, the advocacy on Slack and getting
-              on calls with their customers, are much appreciated by
-              early-adopters and seasoned users”
-            </span>
-            <span className="font-semibold">
-              Harsh Singhal, Head of Machine Learning,{" "}
-              <span className="font-bold">Koo</span>
-            </span>
-          </p>
+    <>
+      <div className="flex items-center justify-center mt-20  mx-auto max-w-[1000px]">
+        <div className="flex flex-col  space-y-8">
+          {/*  */}
+          <div className="flex-row xl:gap-4 xl:flex">
+            <p className="flex flex-col space-y-4 border-[3px] rounded-xl px-7 border-gray-950 max-w- py-7">
+              <span>
+                “Koo started to adopt BentoML more than a year ago as a platform
+                of choice for model deployments and monitoring. From our early
+                experience it was clear that deploying ML models, a statistic
+                that most companies struggle with, was a solved problem for Koo.
+                The BentoML team works closely with their community of users
+                like I've never seen before. Their AMAs, the advocacy on Slack
+                and getting on calls with their customers, are much appreciated
+                by early-adopters and seasoned users”
+              </span>
+              <span className="font-semibold">
+                Harsh Singhal, Head of Machine Learning,{" "}
+                <span className="font-bold">Koosssss</span>
+              </span>
+            </p>
+            <p className=" border-[3px] space-y-7 mt-5 xl:mt-0 rounded-xl flex flex-col border-black px-7  py-7">
+              <span>
+                “Koo started to adopt BentoML more than a year ago as a platform
+                of choice for model deployments and monitoring. From our early
+                experience it was clear that deploying ML models, a statistic
+                that
+              </span>
+              <span className="font-semibold">
+                Harsh Singhal, Head of Machine Learning,{" "}
+                <span className="font-bold">Koo</span>
+              </span>
+            </p>
+          </div>
+          {/*  */}
+          <div className="flex-row xl:flex gap-5">
+            <p className="border-[3px] space-y-7 rounded-xl flex flex-col border-black px-7  py-7">
+              <span>
+                “Koo started to adopt BentoML more than a year ago as a platform
+                of choice for model deployments and monitoring. From our early
+                experience it was clear that deploying ML models, a statistic
+                that
+              </span>
+              <span className="font-semibold">
+                Harsh Singhal, Head of Machine Learning,{" "}
+                <span className="font-bold">Koosss</span>
+              </span>
+            </p>
+            <p className="flex flex-col space-y-4 mt-5  xl:mt-0 border-[3px] rounded-xl px-7 border-gray-950 max-w- py-7">
+              <span>
+                “Koo started to adopt BentoML more than a year ago as a platform
+                of choice for model deployments and monitoring. From our early
+                experience it was clear that deploying ML models, a statistic
+                that most companies struggle with, was a solved problem for Koo.
+                The BentoML team works closely with their community of users
+                like I've never seen before. Their AMAs, the advocacy on Slack
+                and getting on calls with their customers, are much appreciated
+                by early-adopters and seasoned users”
+              </span>
+              <span className="font-semibold">
+                Harsh Singhal, Head of Machine Learning,{" "}
+                <span className="font-bold">Koo</span>
+              </span>
+            </p>
+          </div>
+          <div className="flex space-x-4">
+            <p className=" flex flex-col space-y-4 border-[3px] rounded-xl px-7 border-gray-950 max-w- py-7">
+              <span>
+                “Koo started to adopt BentoML more than a year ago as a platform
+                of choice for model deployments and monitoring. From our early
+                experience it was clear that deploying ML models, a statistic
+                that most companies struggle with, was a solved problem for Koo.
+                The BentoML team works closely with their community of users
+                like I've never seen before. Their AMAs, the advocacy on Slack
+                and getting on calls with their customers, are much appreciated
+                by early-adopters and seasoned users”
+              </span>
+              <span className="font-semibold">
+                Harsh Singhal, Head of Machine Learning,{" "}
+                <span className="font-bold">Koo</span>
+              </span>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

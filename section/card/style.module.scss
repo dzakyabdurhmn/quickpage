@@ -14,9 +14,11 @@
     top: -25%;
     height: 500px;
     width: 1000px;
-    border-radius: 0px;
+    border-radius: 60px;
     @media only screen and (max-width: 600px) {
-      border-radius: 0px;
+      border-radius: 40px;
+      margin-left: -10px;
+      margin-right: -10px;
     }
     padding: 50px;
     transform-origin: top;

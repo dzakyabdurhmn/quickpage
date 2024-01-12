@@ -39,7 +39,7 @@ import React from "react";
 
 function index() {
   return (
-    <div className="px-10 roundedNoneAdam -mb-12">
+    <div className="roundedNoneAdam -mb-12 -ml-10 -mr-10">
       <div className="bg-[#EDFAE4] rounded-t-3xl roundedNone  max-w-[1500px] mt-20 justify-center mx-auto flex flex-col">
         <div className="flow-root p-10">
           <p className="float-left flex items-center justify-center mt-20  mx-auto max-w-[700px]">

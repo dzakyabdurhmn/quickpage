@@ -1,8 +1,8 @@
 "use client";
+import styles from "./page.module.css";
 import { useRef, useEffect } from "react";
-import styles from "./cruve.module.css";
 
-const Home = (children) => {
+export default function Home(props) {
   const loader = useRef(null);
   const path = useRef(null);
   const initialCurve = 200;
@@ -21,6 +21,9 @@ const Home = (children) => {
       start = timestamp;
     }
     const elapsed = timestamp - start;
+
+    const newCurve = easeOutQuad(elapsed, initialCurve, -200, duration);
+    setPath(newCurve);
 
     loader.current.style.top =
       easeOutQuad(elapsed, 0, -loaderHeight(), duration) + "px";
@@ -46,25 +49,28 @@ const Home = (children) => {
       null,
       "d",
       `M0 0
-      L${width} 0
-      L${width} ${height}
-      Q${width / 2} ${height - curve} 0 ${height}
-      L0 0`
+    L${width} 0
+    L${width} ${height}
+    Q${width / 2} ${height - curve} 0 ${height}
+    L0 0`
     );
   };
 
   return (
-    // ... other components
-    <div>
-      {children}
+    <main className={styles.main}>
+      <div className={styles.body}>
+        {/* <h1>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout.
+        </h1> */}
+        {props.children}
+      </div>
+
       <div ref={loader} className={styles.loader}>
         <svg>
-          <path ref={path}>wswswswswsw</path>
+          <path ref={path}></path>
         </svg>
       </div>
-    </div>
-    // ... other components
+    </main>
   );
-};
-
-export default Home;
+}
