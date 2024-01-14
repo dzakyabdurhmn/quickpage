@@ -9,7 +9,7 @@ function index() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-6">
             {/* Card */}
             <a
-              className="group flex gap-y-6 w-full h-full hover:bg-gray-100 rounded-lg p-5 transition-all dark:hover:bg-white/[.075] dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              className="group flex gap-y-6 w-full h-full  rounded-lg p-5 transition-all dark:hover:bg-white/[.075] dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
               href="#"
             >
               <svg
@@ -93,7 +93,7 @@ function index() {
             {/* End Card */}
             {/* Card */}
             <a
-              className="group flex gap-y-6 w-full h-full hover:bg-gray-100 rounded-lg p-5 transition-all dark:hover:bg-white/[.075] dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              className="group flex gap-y-6 w-full h-full  rounded-lg p-5 transition-all dark:hover:bg-white/[.075] dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
               href="#"
             >
               <svg
@@ -167,7 +167,7 @@ function index() {
             {/* End Card */}
             {/* Card */}
             <a
-              className="group flex gap-y-6 w-full h-full hover:bg-gray-100 rounded-lg p-5 transition-all dark:hover:bg-white/[.075] dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              className="group flex gap-y-6 w-full h-full  rounded-lg p-5 transition-all dark:hover:bg-white/[.075] dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
               href="#"
             >
               <svg

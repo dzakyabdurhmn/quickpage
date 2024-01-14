@@ -10,6 +10,7 @@ import { Button } from "../../components/button";
 import MobileNav from "./mobileNav";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { NavigationMenuDemo } from "./dropdown";
+import Link from "next/link";
 function page() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedValue, setSelectedItem] = useState<string>();
@@ -30,15 +31,15 @@ function page() {
               </div>
               {/* //nav Items Cross */}
               <div className="hidden md:flex items-center space-x-4 justify-center text-base font-semibold px-3 py-2 rounded-2xl text-center text-[#000]">
-                <a href="#" className="hover:text-gray-400">
+                <Link href="./" className="hover:text-gray-400">
                   Beranda
-                </a>
-                <a href="#" className="hover:text-gray-400">
+                </Link>
+                <Link href="./about" className="hover:text-gray-400">
                   Tentangkami
-                </a>
-                <a href="#" className="hover:text-gray-400">
+                </Link>
+                <Link href="#" className="hover:text-gray-400">
                   Tentangkamu
-                </a>
+                </Link>
               </div>
               <div className="btn flex space-x-2 ml-10">
                 <Button
