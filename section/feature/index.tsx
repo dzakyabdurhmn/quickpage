@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import * as Tabs from "@radix-ui/react-tabs";
 import "./menu.module.scss";
@@ -49,7 +48,7 @@ function menu() {
               className="ml-24 hidden sm:block md:block lg:block"
               animationData={lottie}
               loop={true}
-              style={{ height: 200 }}
+              style={{ height: 300 }}
             />
           </div>
           <div className="mt-20">
