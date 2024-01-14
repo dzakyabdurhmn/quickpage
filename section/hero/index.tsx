@@ -8,7 +8,7 @@ import { name, description, heroImage } from "../../lib/info";
 import Lottie from "lottie-react";
 import { motion } from "framer-motion";
 import AnimationText from "../../components/textanimationHeader";
-
+import Geser from "../icon/index";
 // import ghostAnimation from "../../assets/animation/ghost.json";
 import { Button } from "@/components/button";
 const FBlack = localFont({ src: "../../public/fonts/Friends-BlackItalic.otf" });
@@ -73,25 +73,13 @@ function hero({ Component, pageProps }: any) {
             </div>
           </div>
           <div className="relative ms-4">
-            <motion.span
-              // style={ballStyle}
-              transition={{
-                y: transitionValues,
-                width: transitionValues,
-                height: transitionValues,
-              }}
-              animate={{
-                y: ["2rem", "8rem", "10rem"],
-                width: ["5rem", "5rem", "6rem"],
-                height: ["5rem", "5rem", "4rem"],
-              }}
-            >
+            <Geser>
               <Image
                 className="w-full hidden md:flex"
                 src={heroImage}
                 alt="wswsw"
               />
-            </motion.span>
+            </Geser>
           </div>
         </div>
       </div>
