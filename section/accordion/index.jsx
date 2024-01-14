@@ -166,7 +166,7 @@ const AccordionItem = React.forwardRef(
   ({ children, className, ...props }, forwardedRef) => (
     <Accordion.Item
       className={classNames(
-        " mt-px overflow-hidden first:mt-0 first:rounded-t last:rounded-b focus-within:relative focus-within:z-10 focus-within:shadow-[0_0_0_2px] outline-none border-none focus:outline-none focus:border-none active:outline-none active:border-none ",
+        " mt-px overflow-hidden first:mt-0 first:rounded-t last:rounded-b focus-within:relative focus-within:z-10  outline-none border-none focus:outline-none focus:border-none active:outline-none active:border-none ",
         className
       )}
       {...props}
@@ -182,7 +182,7 @@ const AccordionTrigger = React.forwardRef(
     <Accordion.Header className="flex">
       <Accordion.Trigger
         className={classNames(
-          "text-violet11 max-w-[900px] maxmd hover:bg-mauve2 group flex h-[120px] flex-1 cursor-default items-center justify-between  px-5 text-[15px] leading-none  outline-none data-[state=open]:bg-[#B9FF66] data-[state=closed]:bg-[#F3F3F3] data-[state=closed]:rounded-b-[40px]  rounded-t-[40px]",
+          "text-black max-w-[900px] maxmd hover:bg-mauve2 group flex h-[120px] flex-1 cursor-default items-center justify-between  px-5 text-[15px] leading-none  outline-none data-[state=open]:bg-[#B9FF66] data-[state=closed]:bg-[#F3F3F3] data-[state=closed]:rounded-b-[40px]  rounded-t-[40px] ",
           className
         )}
         {...props}
@@ -204,13 +204,15 @@ const AccordionContent = React.forwardRef(
   ({ children, className, ...props }, forwardedRef) => (
     <Accordion.Content
       className={classNames(
-        "text-mauve11 max-w-[900px] maxmd data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp h-[170px] overflow-hidden text-[15px] data-[state=open]:bg-[#B9FF66] data-[state=closed]:bg-[#B9FF66]  rounded-b-[40px] ",
+        "text-mauve11 max-w-[900px] maxmd data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp  overflow-hidden text-[15px] data-[state=open]:bg-[#B9FF66] data-[state=closed]:bg-[#B9FF66]  rounded-b-[40px] ",
         className
       )}
       {...props}
       ref={forwardedRef}
     >
-      <div className={`py-[15px] px-5 ${FNormal.className}`}>{children}</div>
+      <div className={`py-[15px] mb-10 px-5 ${FNormal.className}`}>
+        {children}
+      </div>
     </Accordion.Content>
   )
 );

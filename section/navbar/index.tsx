@@ -41,7 +41,10 @@ function page() {
                 </a>
               </div>
               <div className="btn flex space-x-2 ml-10">
-                <Button className="space-x-2" variant="purple">
+                <Button
+                  className="space-x-2 hover:shadow-[5px_5px_0px_0px_rgba(109,40,217)]"
+                  variant="purple"
+                >
                   <>
                     <span>Helowww</span>
                     <ArrowRightIcon className="text-[#003F30]" />

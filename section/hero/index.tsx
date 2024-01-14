@@ -66,7 +66,7 @@ function hero({ Component, pageProps }: any) {
               </Link> */}
               <Button
                 variant={"purple"}
-                className={`py-5 px-16 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200  shadow-sm hover:bg-[#003F30] disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-white  dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 ${FsemiBold.className}`}
+                className={`py-5 px-16 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200  shadow-sm hover:bg-[#003F30] disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-white  dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 hover:shadow-[5px_5px_0px_0px_rgba(109,40,217)] ${FsemiBold.className}`}
               >
                 Get ssss
               </Button>

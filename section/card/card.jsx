@@ -4,7 +4,8 @@ import styles from "./style.module.scss";
 import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import TextAnimation from "@/components/textanimation";
-
+import Lottie from "lottie-react";
+import anm from "../../assets/animation/p-clk.json";
 const Card = ({
   i,
   title,
@@ -38,11 +39,11 @@ const Card = ({
         <div className={styles.body}>
           {/* <p>{description}</p> */}
           <div className="flex">
-            <img
-              src="https://res.cloudinary.com/dfnxmrqmt/image/upload/v1702757994/jz1n8tar2diyuijxpky5.webp"
-              alt="text text"
-              width={300}
-              className="hidden sm:block"
+            <Lottie
+              className="ml-24 hidden sm:block md:block lg:block"
+              animationData={anm}
+              loop={true}
+              style={{ height: 300 }}
             />
             <div className="justify-center items-center sm:mx-auto md:mx-auto">
               <TextAnimation text="sssssssss" />

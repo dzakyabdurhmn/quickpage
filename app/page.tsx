@@ -16,6 +16,7 @@ import CardContentA from "../section/card-bulr/index";
 import SeCC from "../section/second-header/page";
 import Cookie from "@/components/cookie";
 import { isProduction } from "@/lib/info";
+import Feed from "@/section/feedback/index";
 // import Cruve from "./cruve";
 // import Anm from "./anm";
 // gradient color
@@ -57,9 +58,12 @@ export default function App() {
             {/* <SeCC /> */}
             {/* <CardContentA /> */}
             {/* <Stats /> */}
-            <Cookie />
+            {/* <Cookie /> */}
+            <Feed />
           </main>
-          <footer className="p-4">{/* <Footer /> */}</footer>
+          <footer className="p-4">
+            <Footer />
+          </footer>
         </div>
         <></>
       </>
