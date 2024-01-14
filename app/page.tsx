@@ -17,6 +17,7 @@ import SeCC from "../section/second-header/page";
 import Cookie from "@/components/cookie";
 import { isProduction } from "@/lib/info";
 import Feed from "@/section/feedback/index";
+import Banners from "@/section/banners";
 // import Cruve from "./cruve";
 // import Anm from "./anm";
 // gradient color
@@ -36,6 +37,7 @@ export default function App() {
   if (isProduction) {
     return (
       <>
+        {/* <Banners /> */}
         <div className="flex flex-col h-screen max-w-[2000px] mx-auto">
           <header className="p-4">
             <Navbar />
