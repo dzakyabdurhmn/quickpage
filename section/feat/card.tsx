@@ -1,14 +1,14 @@
 <>
   <section className="ClassName mt-20">
     <div className="container px-6 py-10 mx-auto">
-      <h1 className="text-2xl font-medium text-gray-800 capitalize lg:text-3xl dark:text-white">
+      {/* <h1 className="text-2xl font-medium text-gray-800 capitalize lg:text-3xl dark:text-white">
         explore our awesome{" "}
         <span className="underline decoration-blue-500">Components</span>
-      </h1>
-      <p className="mt-4 text-gray-500 xl:mt-6 xl:w-1/3 leading-8 xl:text-lg xl:leading-9 dark:text-gray-300">
+      </h1> */}
+      {/* <p className="mt-4 text-gray-500 xl:mt-6 xl:w-1/3 leading-8 xl:text-lg xl:leading-9 dark:text-gray-300">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam
         voluptatibus
-      </p>
+      </p> */}
       <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-20 xl:gap-8 md:grid-cols-2 xl:grid-cols-3">
         <div className="p-8 space-y-6    hover:dark:border-sky-400 rounded-3xl hover:scale-105 duration-100">
           <span className="inline-block text-blue-500 dark:text-red-500">

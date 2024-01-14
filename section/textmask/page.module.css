@@ -1,14 +1,15 @@
 .container {
   display: flex;
-  align-items: center;
+  align-items: right;
   flex-direction: column;
   gap: 20vw;
-  margin-top: 300px;
-  margin-bottom: 300px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .body {
-  font-size: 5vw;
+  font-size: 4vw;
+  text-align: center;
 }
 
 .lineMask {

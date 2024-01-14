@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-export default function Framer({ children }) {
+export default function Framer(props) {
   const ref = useRef(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -27,7 +27,7 @@ export default function Framer({ children }) {
       animate={{ x, y }}
       transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
     >
-      {children}
+      {props.children}
     </motion.div>
   );
 }

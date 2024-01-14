@@ -13,10 +13,12 @@ const phrases = [
 export default function Home() {
   return (
     <div className={styles.container}>
+      <div className="p-[50px]">
+        <MaskText />
+      </div>
+      {/* <MaskText />
       <MaskText />
-      <MaskText />
-      <MaskText />
-      <MaskText />
+      <MaskText /> */}
     </div>
   );
 }
@@ -53,6 +55,7 @@ export function MaskText() {
               {phrase}
             </motion.p>
           </div>
+          // <div className="text-center"></div>
         );
       })}
     </div>

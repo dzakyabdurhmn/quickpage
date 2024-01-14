@@ -1,5 +1,5 @@
 import hero from "../assets/image/hero.png";
-import animation from "../assets/animation/emoji.json";
+import animation from "../assets/animation/clock.json";
 //
 import adobe from "../assets/image/company/adobe.png";
 import amazone from "../assets/image/company/amazone.png";

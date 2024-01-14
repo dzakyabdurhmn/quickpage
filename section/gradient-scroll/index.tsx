@@ -19,10 +19,10 @@ export default function Home() {
       <div style={{ height: "100vh" }}></div>
       <Paragraph paragraph={paragraph1} />
       <div style={{ height: "100vh" }}></div>
-      <Word paragraph={paragraph2} />
+      {/* <Word paragraph={paragraph2} />
       <div style={{ height: "100vh" }}></div>
       <Character paragraph={paragraph3} />
-      <div style={{ height: "100vh" }}></div>
+      <div style={{ height: "100vh" }}></div> */}
     </main>
   );
 }

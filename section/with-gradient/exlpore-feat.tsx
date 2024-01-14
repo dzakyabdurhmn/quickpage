@@ -1,14 +1,10 @@
-"use client";
-import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Content from "../feat/index";
+import Content from "../explore-feat/index";
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
-    <div className="bg-white -ml-10 justify-center mx-full flex">
+    <div className="bg-white  justify-center mx-full flex">
       <div className="relative isolate  lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
