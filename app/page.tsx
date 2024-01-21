@@ -17,6 +17,8 @@ import SeCC from "../section/second-header/page";
 import Cookie from "@/components/cookie";
 import { isProduction } from "@/lib/info";
 import Feed from "@/section/feedback/index";
+import AccordionNew from "@/section/accordion-final";
+
 import Banners from "@/section/banners";
 // import Cruve from "./cruve";
 // import Anm from "./anm";
@@ -28,9 +30,10 @@ import GradientFeat from "../section/with-gradient/feat";
 import TextScrollGradient from "../section/with-gradient/scrool-text";
 import GradientFooter from "../section/with-gradient/footer";
 import GradientExploreFeat from "../section/with-gradient/exlpore-feat";
-
+import Number from "../section/mograph-number";
 // import Icon from "../section/icon/index";
-import Cruve from "./cruve";
+import { StreamlinedExperience } from "@/section/streamlined-experience";
+// import Cruve from "./cruve";
 import SvgCruve from "../section/with-gradient/svg-bezier-curve";
 import Mask from "../section/textmask";
 export default function App() {
@@ -40,17 +43,18 @@ export default function App() {
         {/* <Banners /> */}
         <div className="flex flex-col h-screen max-w-[2000px] mx-auto">
           <header className="p-4">
-            <Navbar />
+            <Navbar />{" "}
           </header>
           <main className="p-4">
             <GradientHero />
             <GradientCompany />
             <GradientFeat />
+            {/* <StreamlinedExperience /> */}
+            <Number />
             {/* <SvgCruve /> */}
             {/* <Mask /> */}
             {/* <GradientExploreFeat /> */}
-            {/* <Card /> */}
-            {/* <PricingTables /> */}
+            {/* <PricingTables />
             {/* <CardContent /> */}
             {/* <TextScrollGradient /> */}
             {/* <div className=""></div> */}
@@ -60,11 +64,14 @@ export default function App() {
             {/* <SeCC /> */}
             {/* <CardContentA /> */}
             {/* <Stats /> */}
+            <Card />
+            <AccordionNew />
             {/* <Cookie /> */}
-            <Feed />
+            {/* <Feed /> */}
           </main>
           <footer className="p-4">
-            <Footer />
+            {" "}
+            <Footer />{" "}
           </footer>
         </div>
         <></>

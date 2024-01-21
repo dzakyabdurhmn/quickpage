@@ -79,7 +79,7 @@ export default function AnimatedTitle(props) {
               return (
                 <Character
                   aria-hidden="true"
-                  className="leading-relaxed"
+                  className="leading-[1.3]"
                   key={index}
                   variants={characterAnimation}
                 >

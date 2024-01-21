@@ -1,0 +1,37 @@
+.max {
+  max-width: 1000px;
+}
+
+.min {
+  min-width: 900px;
+}
+
+@media (max-width: 940px) {
+  .accordiontab {
+    min-width: 700px;
+  }
+}
+
+@media (max-width: 743px) {
+  .accordionmobile {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 449px) {
+  .accordionmobilemini {
+    min-width: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  panahX {
+    display: none;
+  }
+}
+
+@media (max-width: 343px) {
+  .maxmd {
+    max-width: 100px;
+  }
+}

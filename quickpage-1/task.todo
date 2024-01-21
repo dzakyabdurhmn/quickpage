@@ -1,0 +1,58 @@
+- Dark theme with gradient
+
+
+bekas navbar:
+<Dropdown.DropdownMenu onOpenChange={setIsOpenNav}>
+                <Dropdown.DropdownMenuTrigger className="mr-2 text-black">
+                  {selectedValue}{" "}
+                  {isOpenNav ? (
+                    <Cross1Icon className="text-black text-xl" />
+                  ) : (
+                    <>
+                      <HamburgerMenuIcon className="text-black text-5xl" />
+                    </>
+                  )}
+                </Dropdown.DropdownMenuTrigger>
+
+                {/* //result to click n=menu */}
+                <Dropdown.DropdownMenuContent className="bg-white z-10 text-center mt-5 w-screen rounded-xl space-y-2  ">
+                  <div className="justify-between flex flex-col">
+                    <div className="ml-3 space-y-5 mt-8">
+                      <Dropdown.DropdownMenuItem
+                        className="hover:border-none hover:outline-none text-gray-800 hover:text-blue-600 "
+                        onSelect={setItem}
+                      >
+                        Beranda
+                      </Dropdown.DropdownMenuItem>
+                      <Dropdown.DropdownMenuItem
+                        className="hover:border-none hover:outline-none text-gray-800 hover:text-blue-600"
+                        onSelect={setItem}
+                      >
+                        Tentang Kami
+                      </Dropdown.DropdownMenuItem>
+                      <Dropdown.DropdownMenuItem
+                        className="hover:border-none hover:outline-none text-gray-800 hover:text-blue-600"
+                        onSelect={setItem}
+                      >
+                        Layanan
+                      </Dropdown.DropdownMenuItem>
+                      <Dropdown.DropdownMenuItem
+                        className="hover:border-none hover:outline-none text-gray-800 hover:text-blue-600"
+                        onSelect={setItem}
+                      >
+                        Kontak
+                      </Dropdown.DropdownMenuItem>
+                      <div className="justify-between flex flex-col pb-8">
+                        <div className="mt-4 ml-3 space-y-2"></div>
+                        <div className="mt-11">
+                          <Dropdown.DropdownMenuItem className="hover:border-none hover:outline-none text-gray-800 hover:text-blue-600 absolute bottom-0 left-0 right-0 mb-6 mt-10">
+                            <button className="inline-flex items-center justify-center h-9 px-16 font-medium tracking-wide text-white transition duration-200 bg-gray-900 rounded-lg hover:bg-gray-800 focus:shadow-outline focus:outline-none mt-9">
+                              Register sekarang
+                            </button>
+                          </Dropdown.DropdownMenuItem>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Dropdown.DropdownMenuContent>
+              </Dropdown.DropdownMenu>

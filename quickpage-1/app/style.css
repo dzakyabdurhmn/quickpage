@@ -1,0 +1,40 @@
+body {
+  font: 1em sans-serif;
+  text-align: center;
+}
+.stage {
+  display: flex;
+  height: 780px;
+  width: 100%;
+  margin-bottom: -92px /* -40px */;
+  @media only screen and (max-width: 600px) {
+    height: 600px;
+    margin-top: -92px /* -8px */;
+    margin-bottom: -92px /* -40px */;
+  }
+}
+.box {
+  align-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* background-color: #f44336; */
+  height: 900px;
+  margin: 0 auto 0 auto;
+  transform-origin: bottom;
+  width: 900px;
+}
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

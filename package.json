@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.18",
@@ -21,13 +22,15 @@
     "@radix-ui/react-navigation-menu": "^1.1.4",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tabs": "^1.0.4",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^1.0.31",
     "@studio-freight/lenis": "^1.0.29",
     "class-variance-authority": "^0.7.0",
     "classnames": "^2.3.3",
     "framer-motion": "^10.16.16",
     "jsonfile": "^6.1.0",
     "lottie-react": "^2.4.0",
-    "next": "14.0.4",
+    "next": "13.5.4",
     "next-cloudinary": "^5.16.0",
     "next-themes": "^0.2.1",
     "react": "^18",

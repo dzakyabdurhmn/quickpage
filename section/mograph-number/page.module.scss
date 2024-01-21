@@ -1,0 +1,23 @@
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .numbers {
+    font-size: 36px;
+    cursor: pointer;
+  }
+  svg {
+    width: 500px;
+    filter: url("#filter");
+
+    path {
+      display: none;
+    }
+
+    circle {
+      fill: black;
+    }
+  }
+}

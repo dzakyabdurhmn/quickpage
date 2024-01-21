@@ -5,11 +5,13 @@ import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import TextAnimation from "@/components/textanimation";
 import Lottie from "lottie-react";
+// import { motion } from "framer-motion";
 import anm from "../../assets/animation/p-clk.json";
 const Card = ({
   i,
   title,
   description,
+  lottie,
   src,
   url,
   color,
@@ -39,20 +41,23 @@ const Card = ({
         <div className={styles.body}>
           {/* <p>{description}</p> */}
           <div className="flex">
-            <Lottie
-              className="ml-24 hidden sm:block md:block lg:block"
-              animationData={anm}
-              loop={true}
-              style={{ height: 300 }}
-            />
-            <div className="justify-center items-center sm:mx-auto md:mx-auto">
-              <TextAnimation text="sssssssss" />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Lottie
+                className="ml-24 hidden sm:block md:block lg:block"
+                animationData={lottie}
+                loop={true}
+                style={{ height: 300 }}
+              />
+            </motion.div>
+
+            <div className="justify-center text-white items-center sm:mx-auto md:mx-auto">
+              <TextAnimation text={title} />
               <div className="mt-10">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-                  autem ab exercitationem laborum commodi molestias magnam vero
-                  id ipsum debitis?
-                </p>
+                <p>{description}</p>
               </div>
             </div>
           </div>

@@ -13,12 +13,11 @@ import {
   LinkBreak2Icon,
 } from "@radix-ui/react-icons";
 import Text from "../../components/textanimation";
-import { motion } from "framer-motion";
 import IconAnimation from "./scale-icon";
 const FBlack = localFont({ src: "../../public/fonts/Friends-BlackItalic.otf" });
 const FNormal = localFont({ src: "../../public/fonts/Friends-Normal.otf" });
 const FsemiBold = localFont({ src: "../../public/fonts/Friends-SemiBold.otf" });
-
+import { motion } from "framer-motion";
 function menu() {
   const menu = featureContent();
   return (
@@ -61,25 +60,26 @@ function menu() {
                 aria-label="Manage your account"
               >
                 <Tabs.Trigger
-                  className="bg-white px-5 h-[45px] flex-1 flex items-center justify-center text-[15px] leading-none text-mauve11 select-none rounded-xl hover:text-violet11 data-[state=active]:text-violet11 data-[state=active]:bg-yellow-300 data-[state=active]:shadow-current data-[state=active]:focus:relative data-[state=active]:focus:shadow-[0_0_0_2px]  outline-none cursor-default whitespace-nowrap py-3"
+                  className="transform  transition duration-1000  data-[state=active]:scale-[0.9] bg-white px-5 h-[45px] flex-1 flex items-center justify-center text-[15px] leading-none text-mauve11 select-none rounded-xl hover:text-violet11 data-[state=active]:text-violet11 data-[state=active]:bg-yellow-300 data-[state=active]:shadow-current data-[state=active]:focus:relative data-[state=active]:focus:shadow-[0_0_0_2px]  outline-none cursor-default whitespace-nowrap py-3"
                   value="sendassignment"
                 >
                   {menu[1].label}
                 </Tabs.Trigger>
                 <Tabs.Trigger
-                  className="bg-white px-5 h-[45px] flex-1 flex items-center justify-center text-[15px] leading-none text-mauve11 select-none rounded-xl hover:text-violet11 data-[state=active]:text-violet11 data-[state=active]:bg-yellow-300 data-[state=active]:shadow-current data-[state=active]:focus:relative data-[state=active]:focus:shadow-[0_0_0_2px]  outline-none cursor-default whitespace-nowrap py-3"
+                  className="transform  transition duration-1000  data-[state=active]:scale-[0.9] bg-white px-5 h-[45px] flex-1 flex items-center justify-center text-[15px] leading-none text-mauve11 select-none rounded-xl hover:text-violet11 data-[state=active]:text-violet11 data-[state=active]:bg-yellow-300 data-[state=active]:shadow-current data-[state=active]:focus:relative data-[state=active]:focus:shadow-[0_0_0_2px]  outline-none cursor-default whitespace-nowrap py-3"
                   value="notation"
                 >
                   {menu[2].label}
                 </Tabs.Trigger>
                 <Tabs.Trigger
-                  className="bg-white px-5 h-[45px] flex-1 flex items-center justify-center text-[15px] leading-none text-mauve11 select-none rounded-xl hover:text-violet11 data-[state=active]:text-violet11 data-[state=active]:bg-yellow-300 data-[state=active]:shadow-current data-[state=active]:focus:relative data-[state=active]:focus:shadow-[0_0_0_2px]  outline-none cursor-default whitespace-nowrap py-3"
+                  className="transform  transition duration-1000  data-[state=active]:scale-[0.9] bg-white px-5 h-[45px] flex-1 flex items-center justify-center text-[15px] leading-none text-mauve11 select-none rounded-xl hover:text-violet11 data-[state=active]:text-violet11 data-[state=active]:bg-yellow-300 data-[state=active]:shadow-current data-[state=active]:focus:relative data-[state=active]:focus:shadow-[0_0_0_2px]  outline-none cursor-default whitespace-nowrap py-3"
                   value="discussion"
                 >
                   {menu[3].label}
                 </Tabs.Trigger>
+
                 <Tabs.Trigger
-                  className="bg-white px-5 h-[45px] flex-1 flex items-center justify-center text-[15px] leading-none text-mauve11 select-none rounded-xl hover:text-violet11 data-[state=active]:text-violet11 data-[state=active]:bg-yellow-300 data-[state=active]:shadow-current data-[state=active]:focus:relative data-[state=active]:focus:shadow-[0_0_0_2px]  outline-none cursor-default whitespace-nowrap py-3"
+                  className="transform  transition duration-1000  data-[state=active]:scale-[0.9] bg-white px-5 h-[45px] flex-1 flex items-center justify-center text-[15px] leading-none text-mauve11 select-none rounded-xl hover:text-violet11 data-[state=active]:text-violet11 data-[state=active]:bg-yellow-300 data-[state=active]:shadow-current data-[state=active]:focus:relative data-[state=active]:focus:shadow-[0_0_0_2px]  outline-none cursor-default whitespace-nowrap py-3"
                   value="connected"
                 >
                   {menu[4].label}
