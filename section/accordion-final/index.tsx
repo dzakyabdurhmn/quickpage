@@ -1,6 +1,10 @@
 import React from "react";
 import AccordionDesktop from "@/section/new-accordion";
 import AccordionMobile from "@/section/new-accordion/mobile";
+import localFont from "next/font/local";
+// const myFont = localFont({
+//   src: "../../public/fonts/JetBrainsMono-Medium.woff2",
+// });
 
 function index() {
   return (

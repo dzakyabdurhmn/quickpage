@@ -13,7 +13,7 @@ import {
 function index() {
   return (
     <>
-      <div className="flex items-center justify-center mt-20  mx-auto max-w-[1000px]">
+      <div className="flex items-center justify-center mt-20 mx-auto max-w-[1000px]">
         <div className="flex flex-col  space-y-8">
           {/*  */}
           <div className="flex-row xl:gap-4 xl:flex">
@@ -51,18 +51,18 @@ function index() {
                 </div>
               </div>
               <span>
-                “Koo started to adopt BentoML more than a year ago as a platform
-                of choice for model deployments and monitoring. From our early
-                experience it was clear that deploying ML models, a statistic
-                that most companies struggle with, was a solved problem for Koo.
-                The BentoML team works closely with their community of users
-                like I've never seen before. Their AMAs, the advocacy on Slack
-                and getting on calls with their customers, are much appreciated
-                by early-adopters and seasoned users”
+                Saya memiliki pengalaman yang luar biasa di Kumonitas
+                Muhammadiyah, sebuah platform yang membawa pendidikan ke tingkat
+                baru. Fitur tugas terkoneksi memberikan fleksibilitas luar biasa
+                dan membantu saya terlibat dalam pembelajaran yang lebih
+                personal. Notasi mendalam membantu saya melacak perkembangan
+                pribadi, sementara diskusi berbasis pemikiran kritis membuka
+                peluang berharga untuk berbagi dan mendengarkan sudut pandang
+                yang beragam.
               </span>
               <span className="font-semibold">
-                Harsh Singhal, Head of Machine Learning,{" "}
-                <span className="font-bold">Koosssss</span>
+                Afkar,{" "}
+                <span className="font-bold">SMK MUHAMMADIYAH 1 YOGYAKARTA</span>
               </span>
             </div>
             <div className=" border-[3px] space-y-7 mt-5 xl:mt-0 rounded-xl flex flex-col border-black px-7  py-7">
@@ -99,14 +99,14 @@ function index() {
                 </div>
               </div>
               <span>
-                “Koo started to adopt BentoML more than a year ago as a platform
-                of choice for model deployments and monitoring. From our early
-                experience it was clear that deploying ML models, a statistic
-                that
+                Rekomendasi tinggi untuk semua yang mencari pengalaman
+                pendidikan yang holistik dan terhubung secara global. 🌐✨
               </span>
               <span className="font-semibold">
-                Harsh Singhal, Head of Machine Learning,{" "}
-                <span className="font-bold">Koo</span>
+                Keyza arya
+                <span className="font-bold">
+                  , SMK MUHAMMADIYAH 1 YOGYAKARTA
+                </span>
               </span>
             </div>
           </div>
@@ -134,14 +134,19 @@ function index() {
                 </div>
               </div>
               <span>
-                “Koo started to adopt BentoML more than a year ago as a platform
-                of choice for model deployments and monitoring. From our early
-                experience it was clear that deploying ML models, a statistic
-                that
+                Yang paling mengesankan adalah konektivitas komunitas
+                pendidikan. Saya merasa terhubung dengan sesama pembelajar,
+                mendapatkan inspirasi dari pengalaman mereka, dan memperluas
+                wawasan saya. Kumonitas Muhammadiyah benar-benar menciptakan
+                lingkungan yang mendukung pertumbuhan dan keunggulan dalam
+                pendidikan.
               </span>
               <span className="font-semibold">
-                Harsh Singhal, Head of Machine Learning,{" "}
-                <span className="font-bold">Koosss</span>
+                Celistia putri,
+                <span className="font-bold">
+                  {" "}
+                  SMP MUHAMMADIYAH 7 YOGYAKARTA
+                </span>
               </span>
             </div>
             <div className="flex flex-col space-y-4 mt-5  xl:mt-0 border-[3px] rounded-xl px-7 border-gray-950 max-w- py-7">
@@ -178,18 +183,18 @@ function index() {
                 </div>
               </div>
               <span>
-                “Koo started to adopt BentoML more than a year ago as a platform
-                of choice for model deployments and monitoring. From our early
-                experience it was clear that deploying ML models, a statistic
-                that most companies struggle with, was a solved problem for Koo.
-                The BentoML team works closely with their community of users
-                like I've never seen before. Their AMAs, the advocacy on Slack
-                and getting on calls with their customers, are much appreciated
-                by early-adopters and seasoned users”
+                Kumonitas Muhammadiyah memberikan nuansa baru dalam dunia
+                pendidikan online. Sistem tugas terkoneksi memberikan pengalaman
+                belajar yang terkoordinasi, sedangkan fitur notasi memudahkan
+                pemantauan kemajuan individu. Diskusi berbasis pemikiran kritis
+                membuka peluang untuk mendalami materi dan memperluas wawasan.
               </span>
               <span className="font-semibold">
-                Harsh Singhal, Head of Machine Learning,{" "}
-                <span className="font-bold">Koo</span>
+                Syafiq Alfarenzi,
+                <span className="font-bold">
+                  {" "}
+                  SMA MUHAMMADIYAH 1 YOGYAKARTA
+                </span>
               </span>
             </div>
           </div>
@@ -216,18 +221,18 @@ function index() {
                 </div>
               </div>
               <span>
-                “Koo started to adopt BentoML more than a year ago as a platform
-                of choice for model deployments and monitoring. From our early
-                experience it was clear that deploying ML models, a statistic
-                that most companies struggle with, was a solved problem for Koo.
-                The BentoML team works closely with their community of users
-                like I've never seen before. Their AMAs, the advocacy on Slack
-                and getting on calls with their customers, are much appreciated
-                by early-adopters and seasoned users”
+                Diskusi berbasis pemikiran kritis di kumonitas ini memicu
+                pertukaran ide yang kaya dan membantu saya melihat topik dari
+                berbagai sudut pandang. Saya merasa terhubung dengan komunitas
+                pembelajar yang peduli pada pertumbuhan dan pembelajaran
+                bersama. 🚀🧠
               </span>
               <span className="font-semibold">
-                Harsh Singhal, Head of Machine Learning,{" "}
-                <span className="font-bold">Koo</span>
+                Hafidz ar rachman,
+                <span className="font-bold">
+                  {" "}
+                  SMA Muhammadiyah 2 yogyakarta
+                </span>
               </span>
             </div>
           </div>

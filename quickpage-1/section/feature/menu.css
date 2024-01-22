@@ -1,7 +1,0 @@
-.kalaodihp {
-  @media (max-width: 767px) {
-    .button {
-      margin-bottom: 0.25rem; /* Untuk smartphone atau hp elemen HTML */
-    }
-  }
-}

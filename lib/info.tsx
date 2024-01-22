@@ -1,16 +1,6 @@
 import hero from "../assets/image/hero.png";
 import animation from "../assets/animation/clock.json";
 //
-import adobe from "../assets/image/company/1.png";
-import amazone from "../assets/image/company/Logo - #10.png";
-import asana from "../assets/image/company/Logo - #11.png";
-import evernote from "../assets/image/company/Logo - #12.png";
-import google from "../assets/image/company/Logo - #13.png";
-import microsoft from "../assets/image/company/Logo - #14.png";
-import paypal from "../assets/image/company/Logo - #15.png";
-import shopify from "../assets/image/company/Logo - #16.png";
-import spotify from "../assets/image/company/Logo - #17.png";
-import uber from "../assets/image/company/";
 
 //
 
@@ -29,9 +19,9 @@ export const sitedescription = "just for development";
 export const siteurl = "http://localhost:3000";
 
 // This is a hero section
-export const name = "MEETING ALL STUDENT NEEDS IN ONE GRASP";
+export const name = "KOLABORASI DENGAN PSEUDONIM YANG AUTENTIK.";
 export const description =
-  " One-stop platform for all student learning resources, empowering them to thrive in school.";
+  "Mempersiapkan diri untuk menjadi anggota Pelajar Muhammadiyah dan bergabung dalam komunitas di mana setiap keahlian diapresiasi tanpa batasan.";
 
 export const heroImage = hero;
 
@@ -43,38 +33,38 @@ export const featureContent = () => {
   return [
     {
       id: 0,
-      header: "Read this",
-      heading: "Features that  you'll  ever need.",
+      header: "Edukasi Harmoni Muhammadiyah",
+      heading: "Fitur yang kami sediakan",
       description:
-        "Innovative platform facilitating collaboration and exchange of assignments among students from various schools. With a widely accessible assignment upload feature, this application enables students to share projects, assignments, and relevant information with their peers from different schools. Here are some key features that make",
+        "Keterlibatan aktif dalam belajar melalui tugas-tugas online yang terhubung secara dinamis, membawa pengalaman pembelajaran personal dan teradaptasi untuk setiap anggota Kumonitas Muhammadiyah.  Melampaui batas platform, fitur ini menghadirkan Kumonitas Muhammadiyah sebagai jaringan komunitas pendidikan yang saling terhubung, memfasilitasi pertukaran ide, pengalaman, dan kolaborasi yang menginspirasi.",
     },
     {
       id: 1,
-      label: "Send assignment",
-      title: "Cross-School Task Exchange Hub",
+      label: "Interaktif",
+      title: "Pusat Pertukaran Tugas Lintas Sekolah",
       content:
-        "Innovative platform facilitating collaboration and exchange of assignments among students from various schools. With a widely accessible assignment upload feature, this application enables students to share projects, assignments, and relevant information with their peers from different schools. Here are some key features that make",
+        "Kumonitas Muhammadiyah ini memperkenalkan konsep tugas pendidikan yang interaktif dan relevan. Setiap anggota dapat mengakses dan menyelesaikan tugas secara online, memberikan pengalaman pembelajaran yang terpersonal dan sesuai dengan perkembangan kemampuan masing-masing.",
     },
     {
       id: 2,
-      label: "Notation",
-      title: "Elevate Your Learning Experience",
+      label: "Catatan",
+      title: "Tingkatkan Pengalaman Belajar Anda",
       content:
-        "The Aesthetic Notes feature in this application provides students with a more immersive experience beyond traditional note-taking. With the ability to create aesthetically pleasing notes, students can express their creativity while enhancing the effectiveness of their learning.",
+        "Dalam perjalanan menuju optimalisasi pendidikan, Kumonitas Muhammadiyah menyediakan fitur notasi/catatan pembelajaran yang mendalam. Anggota dapat mencatat pemahaman, ide, dan pertanyaan, memfasilitasi pemahaman yang lebih baik dan kolaborasi dalam proses pembelajaran.",
     },
     {
       id: 3,
-      label: "Discussion",
-      title: "Interactive Knowledge Exchange Hub",
+      label: "Diskusi",
+      title: "Pusat Pertukaran Pengetahuan Interaktif",
       content:
-        "Within this application, it bridges students to a dedicated interactive space designed for in-depth exploration and interest-based discussions. Meticulously connecting individuals based on their interests and expertise, this feature establishes a foundation for meaningful knowledge exchange.",
+        " Mendorong pertukaran gagasan dan pandangan, Kumonitas Muhammadiyah membawa konsep diskusi berbasis pemikiran kritis. Diskusi online yang terbimbing memungkinkan anggota untuk menjelajahi topik pendidikan terkini, mengasah keterampilan berpikir kritis, dan membangun perspektif yang luas.",
     },
     {
       id: 4,
-      label: "Connected",
-      title: "Empowering Learning Communities",
+      label: "Terhubung",
+      title: "Memberdayakan Komunitas Belajar",
       content:
-        "This application forms communities based on interests and talents, creating a space for deep knowledge exchange and collaboration. All features are carefully integrated, crafting a comprehensive learning experience without overlooking privacy. The application becomes a valuable tool in supporting personal growth and more meaningful learning.",
+        "Kumonitas Muhammadiyah ini tidak hanya sebuah platform, tetapi juga jaringan komunitas pendidikan yang erat terhubung. Melalui fitur ini, anggota dapat berbagi pengalaman, memperoleh wawasan baru, dan memperluas jejaring dalam upaya bersama mencapai standar pendidikan yang unggul dan berkemajuan.",
     },
   ] as const;
 };
@@ -113,60 +103,61 @@ export const projects = [
   {
     // @ts-ignore
     lottie: lottieDocs,
-    title: "Matthias Leidinger",
-    description: "Originally hailing from Austria xixixixixi",
+    title: "Identitas Unggul Muhammadiyah",
+    description:
+      "Mengacu pada ciri khas sekolah Muhammadiyah, ISMUBA menonjolkan diri sebagai pilar pembelajaran unggul yang menjadi daya tarik utama bagi orangtua. Mata pelajaran ISMUBA di dalam kurikulum sekolah Muhammadiyah dianggap mampu membekali siswa dengan keilmuan dan akhlak yang baik.",
     src: "https://res.cloudinary.com/dfnxmrqmt/image/upload/v1702880068/paralax-assets/x8ctsedtpaoyu7ek2eqh.svg",
     link: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
-    color: "#7F58AF",
+    color: "#F6B17A",
   },
   {
     // @ts-ignore
     lottie: lottieDoor,
-    title: "Clément Chapillon",
+    title: "Transformatif dan Terintegrasi dengan Kehidupan Nyata",
     description:
-      "Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.",
+      "Pembelajaran ISMUBA di sekolah Muhammadiyah bukan hanya memberikan bekal teori yang dapat diaplikasikan dalam berbagai situasi, tetapi juga menekankan transformasi pribadi dan sosial.",
     src: "https://res.cloudinary.com/dfnxmrqmt/image/upload/v1702880068/paralax-assets/x8ctsedtpaoyu7ek2eqh.svg",
     link: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
-    color: "#64C5EB",
+    color: "#AE445A",
   },
   {
     // @ts-ignore
     lottie: lottieAstro,
-    title: "Zissou",
+    title: "Pendidikan Holistik Integratif",
     description:
-      "Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.",
+      "Konsep pendidikan holistik di sekolah Muhammadiyah menekankan pada keutuhan peserta didik, mengasumsikan bahwa setiap individu memiliki potensi untuk berkembang. Pendekatan ini mencakup aspek moral, etis, religius, psikologis, filosofis, dan sosial secara menyeluruh, membentuk hubungan yang kokoh antara peserta didik dan lingkungannya.",
     src: "https://res.cloudinary.com/dfnxmrqmt/image/upload/v1702880068/paralax-assets/x8ctsedtpaoyu7ek2eqh.svg",
     link: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
-    color: "#E84D8A",
+    color: "#662549",
   },
   {
     // @ts-ignore
     lottie: lottieCheckDocs,
-    title: "Mathias Svold and Ulrik Hasemann",
+    title: "Penguatan Ideologi dan Kaderisasi",
     description:
-      "Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.",
+      "ISMUBA diarahkan sebagai wahana untuk penguatan ideologi dan kaderisasi Muhammadiyah. Melalui pendekatan kreatif, inovatif, dan contextual teaching and learning.",
     src: "https://res.cloudinary.com/dfnxmrqmt/image/upload/v1702880068/paralax-assets/x8ctsedtpaoyu7ek2eqh.svg",
     link: "https://www.ignant.com/2019/03/13/a-photographic-series-depicting-the-uncertain-future-of-denmarks-treasured-coastlines/",
-    color: "#FEB326",
+    color: "#451952",
   },
 ];
 
 export const company = [
   {
     id: 1,
-    logo: "https://res.cloudinary.com/dfnxmrqmt/image/upload/v1705799206/company-lorem/x5lanwhznyqxxpnorkbp.png",
+    logo: "https://purecatamphetamine.github.io/country-flag-icons/3x2/ID.svg",
   },
   {
     id: 2,
-    logo: "https://res.cloudinary.com/dfnxmrqmt/image/upload/v1705799206/company-lorem/bksz8hhmpbzxebktqadi.png",
+    logo: "https://purecatamphetamine.github.io/country-flag-icons/3x2/ID.svg",
   },
   {
     id: 3,
-    logo: "https://res.cloudinary.com/dfnxmrqmt/image/upload/v1705799205/company-lorem/gpea9v15flddve9dzrdg.png",
+    logo: "https://purecatamphetamine.github.io/country-flag-icons/3x2/ID.svg",
   },
   {
     id: 4,
-    logo: "https://res.cloudinary.com/dfnxmrqmt/image/upload/v1705799205/company-lorem/sqyvc2ig8hzbfqmcsqcx.png",
+    logo: "https://purecatamphetamine.github.io/country-flag-icons/3x2/ID.svg",
   },
   {
     id: 5,

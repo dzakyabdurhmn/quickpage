@@ -9,6 +9,7 @@ import localFont from "next/font/local";
 import { Typography } from "@/components/typograpy";
 import "./accordion.css";
 import { accordion } from "@/lib/info";
+import TextAnm from "../../../components/textanimation";
 const FBlack = localFont({
   src: "../../../public/fonts/Friends-BlackItalic.otf",
 });
@@ -22,6 +23,12 @@ function AccordionDemo() {
 
   return (
     <div className="p-7">
+      <div className="mb-4">
+        <TextAnm
+          className="text-2xl font-exra text-gray-700 "
+          text="Upcoming features"
+        />
+      </div>
       <Accordion.Root
         className=""
         type="single"

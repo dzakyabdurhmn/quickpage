@@ -1,11 +1,11 @@
 // import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { sitename, sitedescription, siteurl } from "@/lib/info";
+import localFont from "next/font/local";
+
 // import { ThemeProvider } from "next-themes";
 
 // import Cursor from "../components/cursor";
-const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata: Metadata = {
 //   title: {
@@ -49,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* <ThemeProvider attribute="class"> */}
-      <body className={inter.className}>
+      <body>
         {/* <Cursor /> */}
         {/* <Component {...children} /> */}
 

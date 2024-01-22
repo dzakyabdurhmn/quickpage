@@ -65,29 +65,16 @@ function index() {
               <div>
                 <div>
                   <h3 className="block font-bold text-gray-800 dark:text-white">
-                    Build your portfolio
+                    Diskusi antar mapel
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    The simplest way to keep your portfolio always up-to-date.
+                    Ada tugas yang engga ngerti? diskusikan kepada Kumonitas
+                    kami
                   </p>
-                </div>
-                <p className="mt-3 inline-flex items-center gap-x-1 text-sm font-semibold text-gray-800 dark:text-gray-200">
+                  <p className="mt-3 inline-flex items-center gap-x-1 text-sm font-semibold text-gray-800 dark:text-gray-200">
                   Learn more
-                  <svg
-                    className="flex-shrink-0 w-4 h-4 transition ease-in-out group-hover:translate-x-1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="m9 18 6-6-6-6" />
-                  </svg>
                 </p>
+                </div>
               </div>
             </a>
             {/* End Card */}
@@ -139,28 +126,15 @@ function index() {
               <div>
                 <div>
                   <h3 className="block font-bold text-gray-800 dark:text-white">
-                    Get freelance work
+                    Dapatkan beribu relasi
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    New design projects delivered to your inbox each morning.
+                    Ada banyakk anggota dari sabang sampai marauke. Yakin engga
+                    tertarik?
                   </p>
                 </div>
                 <p className="mt-3 inline-flex items-center gap-x-1 text-sm font-semibold text-gray-800 dark:text-gray-200">
                   Learn more
-                  <svg
-                    className="flex-shrink-0 w-4 h-4 transition ease-in-out group-hover:translate-x-1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="m9 18 6-6-6-6" />
-                  </svg>
                 </p>
               </div>
             </a>
@@ -199,29 +173,15 @@ function index() {
               <div>
                 <div>
                   <h3 className="block font-bold text-gray-800 dark:text-white">
-                    Sell your goods
+                    Dapatkan penghasilan
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Get your goods in front of millions of potential customers
-                    with ease.
+                    Kamu punya kemampuan di bidang apa nihh? Kumonitas kami
+                    mungkin membutuhkan anda
                   </p>
                 </div>
                 <p className="mt-3 inline-flex items-center gap-x-1 text-sm font-semibold text-gray-800 dark:text-gray-200">
                   Learn more
-                  <svg
-                    className="flex-shrink-0 w-4 h-4 transition ease-in-out group-hover:translate-x-1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="m9 18 6-6-6-6" />
-                  </svg>
                 </p>
               </div>
             </a>

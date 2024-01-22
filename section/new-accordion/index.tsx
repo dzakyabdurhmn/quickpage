@@ -66,9 +66,6 @@ const TabsDemo = () => (
           <AI />
         </Tabs.Content>
         <Tabs.Content value="tab4">
-          <h1 className="text-2xl font-bold text-gray-700">
-            Upcoming features
-          </h1>
           <Upcomming />
         </Tabs.Content>
       </div>

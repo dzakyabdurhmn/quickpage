@@ -54,7 +54,7 @@ const Card = ({
               />
             </motion.div>
 
-            <div className="justify-center text-white items-center sm:mx-auto md:mx-auto">
+            <div className="justify-center text-white items-center sm:mx-auto md:mx-auto mb-5  max-w-[400px]">
               <TextAnimation text={title} />
               <div className="mt-10">
                 <p>{description}</p>

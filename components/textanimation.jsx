@@ -60,7 +60,7 @@ export default function AnimatedTitle(props) {
   };
 
   return (
-    <Title aria-label={text} role="heading">
+    <Title className={props.className} aria-label={text} role="heading">
       {text.split(" ").map((word, index) => {
         return (
           <Word

@@ -49,9 +49,9 @@ export default function App() {
   const scope = useMenuAnimation(isOpen);
 
   return (
-    <div className="-mb-60 -z-0 ">
+    <div className="-mb-[100px] -z-0 ">
       <div className="flex justify-between bg-white w-screen  -mt-4 ">
-        <div className="text-red-500 mt-5 ml-3">
+        <div className="text-red-500 mt-5 ml-9">
           <Icons.icong />
         </div>
         <div className="mr-12">
@@ -93,7 +93,7 @@ export default function App() {
             </div>
           </div> */}
           <div className="text-black flex flex-col space-y-4 -z-0">
-            <li className="hover:border-none hover:outline-none text-gray-800 hover:text-blue-600 ">
+            {/* <li className="hover:border-none hover:outline-none text-gray-800 hover:text-blue-600 ">
               Beranda
             </li>
             <li className="hover:border-none hover:outline-none text-gray-800 hover:text-blue-600">
@@ -104,13 +104,13 @@ export default function App() {
             </li>
             <li className="hover:border-none hover:outline-none text-gray-800 hover:text-blue-600">
               Kontak
-            </li>
-            <li>
+            </li> */}
+            <li className="mt-20">
               <Button
                 className="px-28 py-10 mb-[20px] min-w-[80%]"
                 variant={"purple"}
               >
-                Get Started
+                <a href="https://discord.gg/kmbAVrR34N">Bergabung sekarang</a>
               </Button>
             </li>
           </div>

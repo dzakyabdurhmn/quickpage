@@ -46,7 +46,7 @@ function AccordionDemo() {
               </AccordionTrigger>
               <AccordionContent>
                 <Typography
-                  className="text-xs font-normal w-72 md:w-0 lg:w-[600px] xl:w-[900px] xl:text-sm"
+                  className="text-xs font-normal w-72 md:w-0 lg:w-[10000px] xl:w-[900px] xl:text-sm"
                   variant="h3"
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia

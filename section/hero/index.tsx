@@ -15,6 +15,12 @@ import { Button } from "@/components/button";
 
 import Spline from "@splinetool/react-spline";
 
+// const satosi = localFont({
+//   src: "../../public/fonts/JetBrainsMono-Medium.woff2",
+// });
+// const jeti = localFont({
+//   src: "../../public/fonts/JetBrainsMono-ExtraBoldItalic.woff2",
+// });
 const FBlack = localFont({ src: "../../public/fonts/Friends-BlackItalic.otf" });
 const FNormal = localFont({ src: "../../public/fonts/Friends-Normal.otf" });
 const FsemiBold = localFont({ src: "../../public/fonts/Friends-SemiBold.otf" });
@@ -45,25 +51,25 @@ function hero({ Component, pageProps }: any) {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 -mt-10">
         <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
           <div>
-            <h1
+            <div
               className={`"block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl  -mt-10" ${FBlack.className}`}
             >
               <AnimationText
                 className="block text-6xl font-bold text-gray-800 sm:text-4xl lg:text-6xl  -mt-10"
                 text={name}
               />
-            </h1>
+            </div>
             <p
-              className={`mt-3 text-lg text-gray-800 dark:text-gray-400 ${FNormal.className}`}
+              className={`mt-3 text-lg text-gray-800 dark:text-gray-400 ${FBlack.className}`}
             >
               {description}
             </p>
-            <div className="mt-7 grid gap-3 w-full md:inline-flex">
+            <div className="mt-7 grid gap-3 w-full md:inline-flex z-30">
               <Button
                 variant={"purple"}
-                className={`py-5 px-16 inline-flex justify-center hover:scale-95 items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200  shadow-sm hover:bg-[#003F30] disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-white  dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 hover:shadow-[5px_5px_0px_0px_rgba(109,40,217)] ${FsemiBold.className}`}
+                className={`py-9 px-16 inline-flex justify-center hover:scale-95 items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200  shadow-sm hover:bg-[#003F30] disabled:opacity-50 disabled:pointer-events-none dark:border-gray-700 dark:text-white  dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 hover:shadow-[5px_5px_0px_0px_rgba(109,40,217)] ${FsemiBold.className}`}
               >
-                Get ssss
+                1000+ trust member
               </Button>
             </div>
           </div>

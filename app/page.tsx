@@ -18,6 +18,7 @@ import Cookie from "@/components/cookie";
 import { isProduction } from "@/lib/info";
 import Feed from "@/section/feedback/index";
 import AccordionNew from "@/section/accordion-final";
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from "react-scroll"
 
 import Banners from "@/section/banners";
 // import Cruve from "./cruve";
@@ -41,16 +42,17 @@ export default function App() {
     return (
       <>
         {/* <Banners /> */}
-        <div className="flex flex-col h-screen max-w-[2000px] mx-auto">
-          <header className="p-4">
+        <div  className="flex flex-col h-screen max-w-[2000px] mx-auto">
+          <header id="hero" className="p-4">
             <Navbar />{" "}
           </header>
           <main className="p-4">
             <GradientHero />
+
             <GradientCompany />
             <GradientFeat />
-            {/* <StreamlinedExperience /> */}
-            <Number />
+            <StreamlinedExperience />
+            {/* <Number /> */}
             {/* <SvgCruve /> */}
             {/* <Mask /> */}
             {/* <GradientExploreFeat /> */}
@@ -65,12 +67,12 @@ export default function App() {
             {/* <CardContentA /> */}
             {/* <Stats /> */}
             <Card />
-            <AccordionNew />
+            {/* <AccordionNew /> */}
             {/* <Cookie /> */}
             {/* <Feed /> */}
           </main>
           <footer className="p-4">
-            {" "}
+        
             <Footer />{" "}
           </footer>
         </div>
