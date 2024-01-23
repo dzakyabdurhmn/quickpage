@@ -105,14 +105,16 @@ export default function App() {
             <li className="hover:border-none hover:outline-none text-gray-800 hover:text-blue-600">
               Kontak
             </li> */}
-            <li className="mt-20">
-              <Button
-                className="px-28 py-10 mb-[20px] min-w-[80%]"
-                variant={"purple"}
-              >
-                <a href="https://discord.gg/kmbAVrR34N">Bergabung sekarang</a>
-              </Button>
-            </li>
+            <a href="https://discord.gg/kmbAVrR34N">
+              <li className="mt-20">
+                <Button
+                  className="px-28 py-10 mb-[20px] min-w-[80%] hover:shadow-[5px_5px_0px_0px_rgba(109,40,217)]"
+                  variant={"purple"}
+                >
+                  Bergabung
+                </Button>
+              </li>
+            </a>
           </div>
         </ul>
       </nav>
